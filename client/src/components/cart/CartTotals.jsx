@@ -15,12 +15,12 @@ const CartTotals = () => {
             <ul className='cart-items px-2 flex-col gap-y-3 py-2 overflow-y-auto'>
                 <li className='cart-item flex justify-between'>
                     <div className="flex items-center">
-                        <img src="https://www.organics.ph/cdn/shop/products/apple-washington-size-113-per-piece-fruits-vegetables-fresh-produce-509590_600x.jpg?v=1601486996"
+                        <img src="https://cdn.britannica.com/77/170477-050-1C747EE3/Laptop-computer.jpg"
                             alt=""
                             className="w-11 h-13 object-cover" />
                         <div className="flex flex-col ml-2">
-                            <b>Elma</b>
-                            <span>12₺ x 2</span>
+                            <b>Computer i9 X Pro PCIS Version Boosted GPU</b>
+                            <span>129.999₺ x 2</span>
                         </div>
                     </div>
                     <div className="flex items-center gap-x-1">
@@ -43,11 +43,38 @@ const CartTotals = () => {
                 </li>
                 <li className='cart-item flex justify-between'>
                     <div className="flex items-center">
-                        <img src="https://www.organics.ph/cdn/shop/products/apple-washington-size-113-per-piece-fruits-vegetables-fresh-produce-509590_600x.jpg?v=1601486996"
+                        <img src="https://cdn.britannica.com/77/170477-050-1C747EE3/Laptop-computer.jpg"
                             alt=""
                             className="w-11 h-13 object-cover" />
                         <div className="flex flex-col ml-2">
-                            <b>Elma</b>
+                            <b>Computer i9 X Pro PCIS Version Boosted GPU</b>
+                            <span>129.999₺ x 2</span>
+                        </div>
+                    </div>
+                    <div className="flex items-center gap-x-1">
+                        <Button
+                            type="primary"
+                            size="small"
+                            className="w-full flex items-center 
+                            justify-center !rounded-full"
+                            icon={<PlusCircleOutlined />}
+                        />
+                        <span className="">1</span>
+                        <Button
+                            type="primary"
+                            size="small"
+                            className="w-full flex items-center 
+                            justify-center !rounded-full"
+                            icon={<MinusCircleOutlined />}
+                        />
+                    </div>
+                </li><li className='cart-item flex justify-between'>
+                    <div className="flex items-center">
+                        <img src="https://cdn.britannica.com/77/170477-050-1C747EE3/Laptop-computer.jpg"
+                            alt=""
+                            className="w-11 h-13 object-cover" />
+                        <div className="flex flex-col ml-2">
+                            <b>Computer i9 X Pro PCIS Version Boosted GPU</b>
                             <span>12₺ x 2</span>
                         </div>
                     </div>
@@ -70,12 +97,12 @@ const CartTotals = () => {
                     </div>
                 </li><li className='cart-item flex justify-between'>
                     <div className="flex items-center">
-                        <img src="https://www.organics.ph/cdn/shop/products/apple-washington-size-113-per-piece-fruits-vegetables-fresh-produce-509590_600x.jpg?v=1601486996"
+                        <img src="https://cdn.britannica.com/77/170477-050-1C747EE3/Laptop-computer.jpg"
                             alt=""
                             className="w-11 h-13 object-cover" />
                         <div className="flex flex-col ml-2">
-                            <b>Elma</b>
-                            <span>12₺ x 2</span>
+                            <b>Computer i9 X Pro PCIS Version Boosted GPU</b>
+                            <span>129.999₺ x 2</span>
                         </div>
                     </div>
                     <div className="flex items-center gap-x-1">
@@ -97,12 +124,12 @@ const CartTotals = () => {
                     </div>
                 </li><li className='cart-item flex justify-between'>
                     <div className="flex items-center">
-                        <img src="https://www.organics.ph/cdn/shop/products/apple-washington-size-113-per-piece-fruits-vegetables-fresh-produce-509590_600x.jpg?v=1601486996"
+                        <img src="https://cdn.britannica.com/77/170477-050-1C747EE3/Laptop-computer.jpg"
                             alt=""
                             className="w-11 h-13 object-cover" />
                         <div className="flex flex-col ml-2">
-                            <b>Elma</b>
-                            <span>12₺ x 2</span>
+                            <b>Computer i9 X Pro PCIS Version Boosted GPU</b>
+                            <span>129.999₺ x 2</span>
                         </div>
                     </div>
                     <div className="flex items-center gap-x-1">
@@ -124,12 +151,12 @@ const CartTotals = () => {
                     </div>
                 </li><li className='cart-item flex justify-between'>
                     <div className="flex items-center">
-                        <img src="https://www.organics.ph/cdn/shop/products/apple-washington-size-113-per-piece-fruits-vegetables-fresh-produce-509590_600x.jpg?v=1601486996"
+                        <img src="https://cdn.britannica.com/77/170477-050-1C747EE3/Laptop-computer.jpg"
                             alt=""
                             className="w-11 h-13 object-cover" />
                         <div className="flex flex-col ml-2">
-                            <b>Elma</b>
-                            <span>12₺ x 2</span>
+                            <b>Computer i9 X Pro PCIS Version Boosted GPU</b>
+                            <span>129.999₺ x 2</span>
                         </div>
                     </div>
                     <div className="flex items-center gap-x-1">
@@ -151,12 +178,12 @@ const CartTotals = () => {
                     </div>
                 </li><li className='cart-item flex justify-between'>
                     <div className="flex items-center">
-                        <img src="https://www.organics.ph/cdn/shop/products/apple-washington-size-113-per-piece-fruits-vegetables-fresh-produce-509590_600x.jpg?v=1601486996"
+                        <img src="https://cdn.britannica.com/77/170477-050-1C747EE3/Laptop-computer.jpg"
                             alt=""
                             className="w-11 h-13 object-cover" />
                         <div className="flex flex-col ml-2">
-                            <b>Elma</b>
-                            <span>12₺ x 2</span>
+                            <b>Computer i9 X Pro PCIS Version Boosted GPU</b>
+                            <span>129.999₺ x 2</span>
                         </div>
                     </div>
                     <div className="flex items-center gap-x-1">
@@ -178,12 +205,12 @@ const CartTotals = () => {
                     </div>
                 </li><li className='cart-item flex justify-between'>
                     <div className="flex items-center">
-                        <img src="https://www.organics.ph/cdn/shop/products/apple-washington-size-113-per-piece-fruits-vegetables-fresh-produce-509590_600x.jpg?v=1601486996"
+                        <img src="https://cdn.britannica.com/77/170477-050-1C747EE3/Laptop-computer.jpg"
                             alt=""
                             className="w-11 h-13 object-cover" />
                         <div className="flex flex-col ml-2">
-                            <b>Elma</b>
-                            <span>12₺ x 2</span>
+                            <b>Computer i9 X Pro PCIS Version Boosted GPU</b>
+                            <span>129.999₺ x 2</span>
                         </div>
                     </div>
                     <div className="flex items-center gap-x-1">
@@ -205,12 +232,12 @@ const CartTotals = () => {
                     </div>
                 </li><li className='cart-item flex justify-between'>
                     <div className="flex items-center">
-                        <img src="https://www.organics.ph/cdn/shop/products/apple-washington-size-113-per-piece-fruits-vegetables-fresh-produce-509590_600x.jpg?v=1601486996"
+                        <img src="https://cdn.britannica.com/77/170477-050-1C747EE3/Laptop-computer.jpg"
                             alt=""
                             className="w-11 h-13 object-cover" />
                         <div className="flex flex-col ml-2">
-                            <b>Elma</b>
-                            <span>12₺ x 2</span>
+                            <b>Computer i9 X Pro PCIS Version Boosted GPU</b>
+                            <span>129.999₺ x 2</span>
                         </div>
                     </div>
                     <div className="flex items-center gap-x-1">
@@ -232,12 +259,12 @@ const CartTotals = () => {
                     </div>
                 </li><li className='cart-item flex justify-between'>
                     <div className="flex items-center">
-                        <img src="https://www.organics.ph/cdn/shop/products/apple-washington-size-113-per-piece-fruits-vegetables-fresh-produce-509590_600x.jpg?v=1601486996"
+                        <img src="https://cdn.britannica.com/77/170477-050-1C747EE3/Laptop-computer.jpg"
                             alt=""
                             className="w-11 h-13 object-cover" />
                         <div className="flex flex-col ml-2">
-                            <b>Elma</b>
-                            <span>12₺ x 2</span>
+                            <b>Computer i9 X Pro PCIS Version Boosted GPU</b>
+                            <span>129.999₺ x 2</span>
                         </div>
                     </div>
                     <div className="flex items-center gap-x-1">
@@ -259,12 +286,12 @@ const CartTotals = () => {
                     </div>
                 </li><li className='cart-item flex justify-between'>
                     <div className="flex items-center">
-                        <img src="https://www.organics.ph/cdn/shop/products/apple-washington-size-113-per-piece-fruits-vegetables-fresh-produce-509590_600x.jpg?v=1601486996"
+                        <img src="https://cdn.britannica.com/77/170477-050-1C747EE3/Laptop-computer.jpg"
                             alt=""
                             className="w-11 h-13 object-cover" />
                         <div className="flex flex-col ml-2">
-                            <b>Elma</b>
-                            <span>12₺ x 2</span>
+                            <b>Computer i9 X Pro PCIS Version Boosted GPU</b>
+                            <span>129.999₺ x 2</span>
                         </div>
                     </div>
                     <div className="flex items-center gap-x-1">
@@ -286,12 +313,12 @@ const CartTotals = () => {
                     </div>
                 </li><li className='cart-item flex justify-between'>
                     <div className="flex items-center">
-                        <img src="https://www.organics.ph/cdn/shop/products/apple-washington-size-113-per-piece-fruits-vegetables-fresh-produce-509590_600x.jpg?v=1601486996"
+                        <img src="https://cdn.britannica.com/77/170477-050-1C747EE3/Laptop-computer.jpg"
                             alt=""
                             className="w-11 h-13 object-cover" />
                         <div className="flex flex-col ml-2">
-                            <b>Elma</b>
-                            <span>12₺ x 2</span>
+                            <b>Computer i9 X Pro PCIS Version Boosted GPU</b>
+                            <span>129.999₺ x 2</span>
                         </div>
                     </div>
                     <div className="flex items-center gap-x-1">
@@ -313,12 +340,12 @@ const CartTotals = () => {
                     </div>
                 </li><li className='cart-item flex justify-between'>
                     <div className="flex items-center">
-                        <img src="https://www.organics.ph/cdn/shop/products/apple-washington-size-113-per-piece-fruits-vegetables-fresh-produce-509590_600x.jpg?v=1601486996"
+                        <img src="https://cdn.britannica.com/77/170477-050-1C747EE3/Laptop-computer.jpg"
                             alt=""
                             className="w-11 h-13 object-cover" />
                         <div className="flex flex-col ml-2">
-                            <b>Elma</b>
-                            <span>12₺ x 2</span>
+                            <b>Computer i9 X Pro PCIS Version Boosted GPU</b>
+                            <span>129.999₺ x 2</span>
                         </div>
                     </div>
                     <div className="flex items-center gap-x-1">
@@ -340,12 +367,12 @@ const CartTotals = () => {
                     </div>
                 </li><li className='cart-item flex justify-between'>
                     <div className="flex items-center">
-                        <img src="https://www.organics.ph/cdn/shop/products/apple-washington-size-113-per-piece-fruits-vegetables-fresh-produce-509590_600x.jpg?v=1601486996"
+                        <img src="https://cdn.britannica.com/77/170477-050-1C747EE3/Laptop-computer.jpg"
                             alt=""
                             className="w-11 h-13 object-cover" />
                         <div className="flex flex-col ml-2">
-                            <b>Elma</b>
-                            <span>12₺ x 2</span>
+                            <b>Computer i9 X Pro PCIS Version Boosted GPU</b>
+                            <span>129.999₺ x 2</span>
                         </div>
                     </div>
                     <div className="flex items-center gap-x-1">
@@ -367,12 +394,12 @@ const CartTotals = () => {
                     </div>
                 </li><li className='cart-item flex justify-between'>
                     <div className="flex items-center">
-                        <img src="https://www.organics.ph/cdn/shop/products/apple-washington-size-113-per-piece-fruits-vegetables-fresh-produce-509590_600x.jpg?v=1601486996"
+                        <img src="https://cdn.britannica.com/77/170477-050-1C747EE3/Laptop-computer.jpg"
                             alt=""
                             className="w-11 h-13 object-cover" />
                         <div className="flex flex-col ml-2">
-                            <b>Elma</b>
-                            <span>12₺ x 2</span>
+                            <b>Computer i9 X Pro PCIS Version Boosted GPU</b>
+                            <span>129.999₺ x 2</span>
                         </div>
                     </div>
                     <div className="flex items-center gap-x-1">
@@ -394,39 +421,12 @@ const CartTotals = () => {
                     </div>
                 </li><li className='cart-item flex justify-between'>
                     <div className="flex items-center">
-                        <img src="https://www.organics.ph/cdn/shop/products/apple-washington-size-113-per-piece-fruits-vegetables-fresh-produce-509590_600x.jpg?v=1601486996"
+                        <img src="https://cdn.britannica.com/77/170477-050-1C747EE3/Laptop-computer.jpg"
                             alt=""
                             className="w-11 h-13 object-cover" />
                         <div className="flex flex-col ml-2">
-                            <b>Elma</b>
-                            <span>12₺ x 2</span>
-                        </div>
-                    </div>
-                    <div className="flex items-center gap-x-1">
-                        <Button
-                            type="primary"
-                            size="small"
-                            className="w-full flex items-center 
-                            justify-center !rounded-full"
-                            icon={<PlusCircleOutlined />}
-                        />
-                        <span className="">1</span>
-                        <Button
-                            type="primary"
-                            size="small"
-                            className="w-full flex items-center 
-                            justify-center !rounded-full"
-                            icon={<MinusCircleOutlined />}
-                        />
-                    </div>
-                </li><li className='cart-item flex justify-between'>
-                    <div className="flex items-center">
-                        <img src="https://www.organics.ph/cdn/shop/products/apple-washington-size-113-per-piece-fruits-vegetables-fresh-produce-509590_600x.jpg?v=1601486996"
-                            alt=""
-                            className="w-11 h-13 object-cover" />
-                        <div className="flex flex-col ml-2">
-                            <b>Elma</b>
-                            <span>12₺ x 2</span>
+                            <b>Computer i9 X Pro PCIS Version Boosted GPU</b>
+                            <span>129.999₺ x 2</span>
                         </div>
                     </div>
                     <div className="flex items-center gap-x-1">
@@ -452,7 +452,7 @@ const CartTotals = () => {
                 <div className="border-t border-b">
                     <div className="flex justify-between p-2">
                         <b>Ara Toplam</b>
-                        <span>92₺</span>
+                        <span>1.432.433₺</span>
                     </div>
                     <div className="flex justify-between p-2">
                         <b>KDV %8</b>

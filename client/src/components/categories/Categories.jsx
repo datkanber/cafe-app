@@ -2,7 +2,7 @@
 
 const Categories = () => {
     return (
-        <ul className="flex gap-4 flex-col text-xl">
+        <ul className="flex gap-4 md:flex-col text-xl">
             <li className="bg-green-700 px-6 py-10
              text-white cursor-pointer hover:bg-pink-700
               transition-all text-center min-w-[145px]">
@@ -11,52 +11,52 @@ const Categories = () => {
             <li className="bg-green-700 px-6 py-10
              text-white cursor-pointer hover:bg-pink-700
               transition-all text-center min-w-[145px]">
-                <span>Yiyecek</span>
+                <span>Computer</span>
             </li>
             <li className="bg-green-700 px-6 py-10
              text-white cursor-pointer hover:bg-pink-700
               transition-all text-center min-w-[145px]">
-                <span>İçecek</span>
+                <span>GPU</span>
             </li>
             <li className="bg-green-700 px-6 py-10
              text-white cursor-pointer hover:bg-pink-700
               transition-all text-center min-w-[145px]">
-                <span>İçecek</span>
+                <span>Software</span>
             </li>
             <li className="bg-green-700 px-6 py-10
              text-white cursor-pointer hover:bg-pink-700
               transition-all text-center min-w-[145px]">
-                <span>İçecek</span>
+                <span>SAP</span>
             </li>
             <li className="bg-green-700 px-6 py-10
              text-white cursor-pointer hover:bg-pink-700
               transition-all text-center min-w-[145px]">
-                <span>İçecek</span>
+                <span>Data Science</span>
             </li>
             <li className="bg-green-700 px-6 py-10
              text-white cursor-pointer hover:bg-pink-700
               transition-all text-center min-w-[145px]">
-                <span>İçecek</span>
+                <span>ABAP</span>
             </li>
             <li className="bg-green-700 px-6 py-10
              text-white cursor-pointer hover:bg-pink-700
               transition-all text-center min-w-[145px]">
-                <span>İçecek</span>
+                <span>SQL</span>
             </li>
             <li className="bg-green-700 px-6 py-10
              text-white cursor-pointer hover:bg-pink-700
               transition-all text-center min-w-[145px]">
-                <span>İçecek</span>
+                <span>React</span>
             </li>
             <li className="bg-green-700 px-6 py-10
              text-white cursor-pointer hover:bg-pink-700
               transition-all text-center min-w-[145px]">
-                <span>İçecek</span>
+                <span>JS</span>
             </li>
             <li className="bg-green-700 px-6 py-10
              text-white cursor-pointer hover:bg-pink-700
               transition-all text-center min-w-[145px]">
-                <span>İçecek</span>
+                <span>Python</span>
             </li>
         </ul>
     )
