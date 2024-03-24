@@ -74,7 +74,7 @@ const Header = () => {
                     <a href={"/"} className='menu-link flex flex-col hover:text-[#40a9ff] trasition-all'>
                         <ShoppingCartOutlined className='text-xl' />
                         <span className='md:text-xs text-[10x]'>
-                            Sepet burak kanber
+                            Sepet
                         </span>
                     </a>
                 </Badge>
@@ -82,5 +82,4 @@ const Header = () => {
         </div>
     );
 };
-burak kanber
 export default Header;
