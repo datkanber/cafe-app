@@ -15,12 +15,12 @@ const CartTotals = () => {
             <ul className='cart-items px-2 flex-col gap-y-3 py-2 overflow-y-auto'>
                 <li className='cart-item flex justify-between'>
                     <div className="flex items-center">
-                        <img src="https://cdn.britannica.com/77/170477-050-1C747EE3/Laptop-computer.jpg"
+                        <img src="https://productimages.hepsiburada.net/s/76/550/110000018390364.jpg/format:webp"
                             alt=""
                             className="w-11 h-13 object-cover" />
-                        <div className="flex flex-col ml-2">
-                            <b>Computer i9 X Pro PCIS Version Boosted GPU</b>
-                            <span>129.999₺ x 2</span>
+                        <div className="flex flex-col ml-2" style={{flexShrink: 1, maxWidth: '250px', overflowWrap: 'break-word'}}>
+                            <b>Gameforce GF-8010 Cold 4X120MM Rainbow Fanlı Oyuncu Kasası</b>
+                            <span>1.499,90₺ x 3</span>
                         </div>
                     </div>
                     <div className="flex items-center gap-x-1">
@@ -46,7 +46,7 @@ const CartTotals = () => {
                         <img src="https://cdn.britannica.com/77/170477-050-1C747EE3/Laptop-computer.jpg"
                             alt=""
                             className="w-11 h-13 object-cover" />
-                        <div className="flex flex-col ml-2">
+                        <div className="flex flex-col ml-2" style={{flexShrink: 1, maxWidth: '250px', overflowWrap: 'break-word'}}>
                             <b>Computer i9 X Pro PCIS Version Boosted GPU</b>
                             <span>129.999₺ x 2</span>
                         </div>
@@ -70,363 +70,12 @@ const CartTotals = () => {
                     </div>
                 </li><li className='cart-item flex justify-between'>
                     <div className="flex items-center">
-                        <img src="https://cdn.britannica.com/77/170477-050-1C747EE3/Laptop-computer.jpg"
+                        <img src="https://productimages.hepsiburada.net/s/393/550/110000417330440.jpg/format:webp"
                             alt=""
                             className="w-11 h-13 object-cover" />
-                        <div className="flex flex-col ml-2">
-                            <b>Computer i9 X Pro PCIS Version Boosted GPU</b>
-                            <span>12₺ x 2</span>
-                        </div>
-                    </div>
-                    <div className="flex items-center gap-x-1">
-                        <Button
-                            type="primary"
-                            size="small"
-                            className="w-full flex items-center 
-                            justify-center !rounded-full"
-                            icon={<PlusCircleOutlined />}
-                        />
-                        <span className="">1</span>
-                        <Button
-                            type="primary"
-                            size="small"
-                            className="w-full flex items-center 
-                            justify-center !rounded-full"
-                            icon={<MinusCircleOutlined />}
-                        />
-                    </div>
-                </li><li className='cart-item flex justify-between'>
-                    <div className="flex items-center">
-                        <img src="https://cdn.britannica.com/77/170477-050-1C747EE3/Laptop-computer.jpg"
-                            alt=""
-                            className="w-11 h-13 object-cover" />
-                        <div className="flex flex-col ml-2">
-                            <b>Computer i9 X Pro PCIS Version Boosted GPU</b>
-                            <span>129.999₺ x 2</span>
-                        </div>
-                    </div>
-                    <div className="flex items-center gap-x-1">
-                        <Button
-                            type="primary"
-                            size="small"
-                            className="w-full flex items-center 
-                            justify-center !rounded-full"
-                            icon={<PlusCircleOutlined />}
-                        />
-                        <span className="">1</span>
-                        <Button
-                            type="primary"
-                            size="small"
-                            className="w-full flex items-center 
-                            justify-center !rounded-full"
-                            icon={<MinusCircleOutlined />}
-                        />
-                    </div>
-                </li><li className='cart-item flex justify-between'>
-                    <div className="flex items-center">
-                        <img src="https://cdn.britannica.com/77/170477-050-1C747EE3/Laptop-computer.jpg"
-                            alt=""
-                            className="w-11 h-13 object-cover" />
-                        <div className="flex flex-col ml-2">
-                            <b>Computer i9 X Pro PCIS Version Boosted GPU</b>
-                            <span>129.999₺ x 2</span>
-                        </div>
-                    </div>
-                    <div className="flex items-center gap-x-1">
-                        <Button
-                            type="primary"
-                            size="small"
-                            className="w-full flex items-center 
-                            justify-center !rounded-full"
-                            icon={<PlusCircleOutlined />}
-                        />
-                        <span className="">1</span>
-                        <Button
-                            type="primary"
-                            size="small"
-                            className="w-full flex items-center 
-                            justify-center !rounded-full"
-                            icon={<MinusCircleOutlined />}
-                        />
-                    </div>
-                </li><li className='cart-item flex justify-between'>
-                    <div className="flex items-center">
-                        <img src="https://cdn.britannica.com/77/170477-050-1C747EE3/Laptop-computer.jpg"
-                            alt=""
-                            className="w-11 h-13 object-cover" />
-                        <div className="flex flex-col ml-2">
-                            <b>Computer i9 X Pro PCIS Version Boosted GPU</b>
-                            <span>129.999₺ x 2</span>
-                        </div>
-                    </div>
-                    <div className="flex items-center gap-x-1">
-                        <Button
-                            type="primary"
-                            size="small"
-                            className="w-full flex items-center 
-                            justify-center !rounded-full"
-                            icon={<PlusCircleOutlined />}
-                        />
-                        <span className="">1</span>
-                        <Button
-                            type="primary"
-                            size="small"
-                            className="w-full flex items-center 
-                            justify-center !rounded-full"
-                            icon={<MinusCircleOutlined />}
-                        />
-                    </div>
-                </li><li className='cart-item flex justify-between'>
-                    <div className="flex items-center">
-                        <img src="https://cdn.britannica.com/77/170477-050-1C747EE3/Laptop-computer.jpg"
-                            alt=""
-                            className="w-11 h-13 object-cover" />
-                        <div className="flex flex-col ml-2">
-                            <b>Computer i9 X Pro PCIS Version Boosted GPU</b>
-                            <span>129.999₺ x 2</span>
-                        </div>
-                    </div>
-                    <div className="flex items-center gap-x-1">
-                        <Button
-                            type="primary"
-                            size="small"
-                            className="w-full flex items-center 
-                            justify-center !rounded-full"
-                            icon={<PlusCircleOutlined />}
-                        />
-                        <span className="">1</span>
-                        <Button
-                            type="primary"
-                            size="small"
-                            className="w-full flex items-center 
-                            justify-center !rounded-full"
-                            icon={<MinusCircleOutlined />}
-                        />
-                    </div>
-                </li><li className='cart-item flex justify-between'>
-                    <div className="flex items-center">
-                        <img src="https://cdn.britannica.com/77/170477-050-1C747EE3/Laptop-computer.jpg"
-                            alt=""
-                            className="w-11 h-13 object-cover" />
-                        <div className="flex flex-col ml-2">
-                            <b>Computer i9 X Pro PCIS Version Boosted GPU</b>
-                            <span>129.999₺ x 2</span>
-                        </div>
-                    </div>
-                    <div className="flex items-center gap-x-1">
-                        <Button
-                            type="primary"
-                            size="small"
-                            className="w-full flex items-center 
-                            justify-center !rounded-full"
-                            icon={<PlusCircleOutlined />}
-                        />
-                        <span className="">1</span>
-                        <Button
-                            type="primary"
-                            size="small"
-                            className="w-full flex items-center 
-                            justify-center !rounded-full"
-                            icon={<MinusCircleOutlined />}
-                        />
-                    </div>
-                </li><li className='cart-item flex justify-between'>
-                    <div className="flex items-center">
-                        <img src="https://cdn.britannica.com/77/170477-050-1C747EE3/Laptop-computer.jpg"
-                            alt=""
-                            className="w-11 h-13 object-cover" />
-                        <div className="flex flex-col ml-2">
-                            <b>Computer i9 X Pro PCIS Version Boosted GPU</b>
-                            <span>129.999₺ x 2</span>
-                        </div>
-                    </div>
-                    <div className="flex items-center gap-x-1">
-                        <Button
-                            type="primary"
-                            size="small"
-                            className="w-full flex items-center 
-                            justify-center !rounded-full"
-                            icon={<PlusCircleOutlined />}
-                        />
-                        <span className="">1</span>
-                        <Button
-                            type="primary"
-                            size="small"
-                            className="w-full flex items-center 
-                            justify-center !rounded-full"
-                            icon={<MinusCircleOutlined />}
-                        />
-                    </div>
-                </li><li className='cart-item flex justify-between'>
-                    <div className="flex items-center">
-                        <img src="https://cdn.britannica.com/77/170477-050-1C747EE3/Laptop-computer.jpg"
-                            alt=""
-                            className="w-11 h-13 object-cover" />
-                        <div className="flex flex-col ml-2">
-                            <b>Computer i9 X Pro PCIS Version Boosted GPU</b>
-                            <span>129.999₺ x 2</span>
-                        </div>
-                    </div>
-                    <div className="flex items-center gap-x-1">
-                        <Button
-                            type="primary"
-                            size="small"
-                            className="w-full flex items-center 
-                            justify-center !rounded-full"
-                            icon={<PlusCircleOutlined />}
-                        />
-                        <span className="">1</span>
-                        <Button
-                            type="primary"
-                            size="small"
-                            className="w-full flex items-center 
-                            justify-center !rounded-full"
-                            icon={<MinusCircleOutlined />}
-                        />
-                    </div>
-                </li><li className='cart-item flex justify-between'>
-                    <div className="flex items-center">
-                        <img src="https://cdn.britannica.com/77/170477-050-1C747EE3/Laptop-computer.jpg"
-                            alt=""
-                            className="w-11 h-13 object-cover" />
-                        <div className="flex flex-col ml-2">
-                            <b>Computer i9 X Pro PCIS Version Boosted GPU</b>
-                            <span>129.999₺ x 2</span>
-                        </div>
-                    </div>
-                    <div className="flex items-center gap-x-1">
-                        <Button
-                            type="primary"
-                            size="small"
-                            className="w-full flex items-center 
-                            justify-center !rounded-full"
-                            icon={<PlusCircleOutlined />}
-                        />
-                        <span className="">1</span>
-                        <Button
-                            type="primary"
-                            size="small"
-                            className="w-full flex items-center 
-                            justify-center !rounded-full"
-                            icon={<MinusCircleOutlined />}
-                        />
-                    </div>
-                </li><li className='cart-item flex justify-between'>
-                    <div className="flex items-center">
-                        <img src="https://cdn.britannica.com/77/170477-050-1C747EE3/Laptop-computer.jpg"
-                            alt=""
-                            className="w-11 h-13 object-cover" />
-                        <div className="flex flex-col ml-2">
-                            <b>Computer i9 X Pro PCIS Version Boosted GPU</b>
-                            <span>129.999₺ x 2</span>
-                        </div>
-                    </div>
-                    <div className="flex items-center gap-x-1">
-                        <Button
-                            type="primary"
-                            size="small"
-                            className="w-full flex items-center 
-                            justify-center !rounded-full"
-                            icon={<PlusCircleOutlined />}
-                        />
-                        <span className="">1</span>
-                        <Button
-                            type="primary"
-                            size="small"
-                            className="w-full flex items-center 
-                            justify-center !rounded-full"
-                            icon={<MinusCircleOutlined />}
-                        />
-                    </div>
-                </li><li className='cart-item flex justify-between'>
-                    <div className="flex items-center">
-                        <img src="https://cdn.britannica.com/77/170477-050-1C747EE3/Laptop-computer.jpg"
-                            alt=""
-                            className="w-11 h-13 object-cover" />
-                        <div className="flex flex-col ml-2">
-                            <b>Computer i9 X Pro PCIS Version Boosted GPU</b>
-                            <span>129.999₺ x 2</span>
-                        </div>
-                    </div>
-                    <div className="flex items-center gap-x-1">
-                        <Button
-                            type="primary"
-                            size="small"
-                            className="w-full flex items-center 
-                            justify-center !rounded-full"
-                            icon={<PlusCircleOutlined />}
-                        />
-                        <span className="">1</span>
-                        <Button
-                            type="primary"
-                            size="small"
-                            className="w-full flex items-center 
-                            justify-center !rounded-full"
-                            icon={<MinusCircleOutlined />}
-                        />
-                    </div>
-                </li><li className='cart-item flex justify-between'>
-                    <div className="flex items-center">
-                        <img src="https://cdn.britannica.com/77/170477-050-1C747EE3/Laptop-computer.jpg"
-                            alt=""
-                            className="w-11 h-13 object-cover" />
-                        <div className="flex flex-col ml-2">
-                            <b>Computer i9 X Pro PCIS Version Boosted GPU</b>
-                            <span>129.999₺ x 2</span>
-                        </div>
-                    </div>
-                    <div className="flex items-center gap-x-1">
-                        <Button
-                            type="primary"
-                            size="small"
-                            className="w-full flex items-center 
-                            justify-center !rounded-full"
-                            icon={<PlusCircleOutlined />}
-                        />
-                        <span className="">1</span>
-                        <Button
-                            type="primary"
-                            size="small"
-                            className="w-full flex items-center 
-                            justify-center !rounded-full"
-                            icon={<MinusCircleOutlined />}
-                        />
-                    </div>
-                </li><li className='cart-item flex justify-between'>
-                    <div className="flex items-center">
-                        <img src="https://cdn.britannica.com/77/170477-050-1C747EE3/Laptop-computer.jpg"
-                            alt=""
-                            className="w-11 h-13 object-cover" />
-                        <div className="flex flex-col ml-2">
-                            <b>Computer i9 X Pro PCIS Version Boosted GPU</b>
-                            <span>129.999₺ x 2</span>
-                        </div>
-                    </div>
-                    <div className="flex items-center gap-x-1">
-                        <Button
-                            type="primary"
-                            size="small"
-                            className="w-full flex items-center 
-                            justify-center !rounded-full"
-                            icon={<PlusCircleOutlined />}
-                        />
-                        <span className="">1</span>
-                        <Button
-                            type="primary"
-                            size="small"
-                            className="w-full flex items-center 
-                            justify-center !rounded-full"
-                            icon={<MinusCircleOutlined />}
-                        />
-                    </div>
-                </li><li className='cart-item flex justify-between'>
-                    <div className="flex items-center">
-                        <img src="https://cdn.britannica.com/77/170477-050-1C747EE3/Laptop-computer.jpg"
-                            alt=""
-                            className="w-11 h-13 object-cover" />
-                        <div className="flex flex-col ml-2">
-                            <b>Computer i9 X Pro PCIS Version Boosted GPU</b>
-                            <span>129.999₺ x 2</span>
+                        <div className="flex flex-col ml-2" style={{flexShrink: 1, maxWidth: '250px', overflowWrap: 'break-word'}}>
+                            <b>OEM 512 MB PC133 Mhz Sd Ram</b>
+                            <span>1.229,79₺ x 2</span>
                         </div>
                     </div>
                     <div className="flex items-center gap-x-1">
@@ -462,7 +111,7 @@ const CartTotals = () => {
                 <div className="border-b mt-4">
                     <div className="flex justify-between p-2">
                         <b className="text-xl text-green-500">Genel Toplam</b>
-                        <span className="text-xl">92₺</span>
+                        <span className="text-xl">172.859,58₺</span>
                     </div>
                 </div>
                 <div className="py-4 px-2">
