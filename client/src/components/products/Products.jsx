@@ -76,7 +76,271 @@ const Products = () => {
                     <img src="https://productimages.hepsiburada.net/s/142/550/110000095044433.jpg/format:webp" alt=""
                         className="h-28 object-scale-down w-full border-b" />
                 </div>
-                <div className="product-info flex flex-col p-3">
+                <div className="product-info flex flex-col p-3 overflow-wrap: break-words">
+                    <span className="font-bold">Apacer AH4U16G32C28Y7GAA-2 Panther Black-Gold 16GB (2X8GB Kit) 3200MHZ Ddr4</span>
+                    <span>1.529,00₺</span>
+                </div>
+            </div>
+            <div className="product-item border hover:shadow-lg cursor-pointer transition-all 
+            select-none">
+                <div className="product-img">
+                    <img src="https://productimages.hepsiburada.net/s/142/550/110000095044433.jpg/format:webp" alt=""
+                        className="h-28 object-scale-down w-full border-b" />
+                </div>
+                <div className="product-info flex flex-col p-3 overflow-wrap: break-words">
+                    <span className="font-bold">Apacer AH4U16G32C28Y7GAA-2 Panther Black-Gold 16GB (2X8GB Kit) 3200MHZ Ddr4</span>
+                    <span>1.529,00₺</span>
+                </div>
+            </div>
+            <div className="product-item border hover:shadow-lg cursor-pointer transition-all 
+            select-none">
+                <div className="product-img">
+                    <img src="https://productimages.hepsiburada.net/s/142/550/110000095044433.jpg/format:webp" alt=""
+                        className="h-28 object-scale-down w-full border-b" />
+                </div>
+                <div className="product-info flex flex-col p-3 overflow-wrap: break-words">
+                    <span className="font-bold">Apacer AH4U16G32C28Y7GAA-2 Panther Black-Gold 16GB (2X8GB Kit) 3200MHZ Ddr4</span>
+                    <span>1.529,00₺</span>
+                </div>
+            </div>
+            <div className="product-item border hover:shadow-lg cursor-pointer transition-all 
+            select-none">
+                <div className="product-img">
+                    <img src="https://productimages.hepsiburada.net/s/142/550/110000095044433.jpg/format:webp" alt=""
+                        className="h-28 object-scale-down w-full border-b" />
+                </div>
+                <div className="product-info flex flex-col p-3 overflow-wrap: break-words">
+                    <span className="font-bold">Apacer AH4U16G32C28Y7GAA-2 Panther Black-Gold 16GB (2X8GB Kit) 3200MHZ Ddr4</span>
+                    <span>1.529,00₺</span>
+                </div>
+            </div>
+            <div className="product-item border hover:shadow-lg cursor-pointer transition-all 
+            select-none">
+                <div className="product-img">
+                    <img src="https://productimages.hepsiburada.net/s/142/550/110000095044433.jpg/format:webp" alt=""
+                        className="h-28 object-scale-down w-full border-b" />
+                </div>
+                <div className="product-info flex flex-col p-3 overflow-wrap: break-words">
+                    <span className="font-bold">Apacer AH4U16G32C28Y7GAA-2 Panther Black-Gold 16GB (2X8GB Kit) 3200MHZ Ddr4</span>
+                    <span>1.529,00₺</span>
+                </div>
+            </div>
+            <div className="product-item border hover:shadow-lg cursor-pointer transition-all 
+            select-none">
+                <div className="product-img">
+                    <img src="https://productimages.hepsiburada.net/s/142/550/110000095044433.jpg/format:webp" alt=""
+                        className="h-28 object-scale-down w-full border-b" />
+                </div>
+                <div className="product-info flex flex-col p-3 overflow-wrap: break-words">
+                    <span className="font-bold">Apacer AH4U16G32C28Y7GAA-2 Panther Black-Gold 16GB (2X8GB Kit) 3200MHZ Ddr4</span>
+                    <span>1.529,00₺</span>
+                </div>
+            </div>
+            <div className="product-item border hover:shadow-lg cursor-pointer transition-all 
+            select-none">
+                <div className="product-img">
+                    <img src="https://productimages.hepsiburada.net/s/142/550/110000095044433.jpg/format:webp" alt=""
+                        className="h-28 object-scale-down w-full border-b" />
+                </div>
+                <div className="product-info flex flex-col p-3 overflow-wrap: break-words">
+                    <span className="font-bold">Apacer AH4U16G32C28Y7GAA-2 Panther Black-Gold 16GB (2X8GB Kit) 3200MHZ Ddr4</span>
+                    <span>1.529,00₺</span>
+                </div>
+            </div>
+            <div className="product-item border hover:shadow-lg cursor-pointer transition-all 
+            select-none">
+                <div className="product-img">
+                    <img src="https://productimages.hepsiburada.net/s/142/550/110000095044433.jpg/format:webp" alt=""
+                        className="h-28 object-scale-down w-full border-b" />
+                </div>
+                <div className="product-info flex flex-col p-3 overflow-wrap: break-words">
+                    <span className="font-bold">Apacer AH4U16G32C28Y7GAA-2 Panther Black-Gold 16GB (2X8GB Kit) 3200MHZ Ddr4</span>
+                    <span>1.529,00₺</span>
+                </div>
+            </div>
+            <div className="product-item border hover:shadow-lg cursor-pointer transition-all 
+            select-none">
+                <div className="product-img">
+                    <img src="https://productimages.hepsiburada.net/s/142/550/110000095044433.jpg/format:webp" alt=""
+                        className="h-28 object-scale-down w-full border-b" />
+                </div>
+                <div className="product-info flex flex-col p-3 overflow-wrap: break-words">
+                    <span className="font-bold">Apacer AH4U16G32C28Y7GAA-2 Panther Black-Gold 16GB (2X8GB Kit) 3200MHZ Ddr4</span>
+                    <span>1.529,00₺</span>
+                </div>
+            </div>
+            <div className="product-item border hover:shadow-lg cursor-pointer transition-all 
+            select-none">
+                <div className="product-img">
+                    <img src="https://productimages.hepsiburada.net/s/142/550/110000095044433.jpg/format:webp" alt=""
+                        className="h-28 object-scale-down w-full border-b" />
+                </div>
+                <div className="product-info flex flex-col p-3 overflow-wrap: break-words">
+                    <span className="font-bold">Apacer AH4U16G32C28Y7GAA-2 Panther Black-Gold 16GB (2X8GB Kit) 3200MHZ Ddr4</span>
+                    <span>1.529,00₺</span>
+                </div>
+            </div>
+            <div className="product-item border hover:shadow-lg cursor-pointer transition-all 
+            select-none">
+                <div className="product-img">
+                    <img src="https://productimages.hepsiburada.net/s/142/550/110000095044433.jpg/format:webp" alt=""
+                        className="h-28 object-scale-down w-full border-b" />
+                </div>
+                <div className="product-info flex flex-col p-3 overflow-wrap: break-words">
+                    <span className="font-bold">Apacer AH4U16G32C28Y7GAA-2 Panther Black-Gold 16GB (2X8GB Kit) 3200MHZ Ddr4</span>
+                    <span>1.529,00₺</span>
+                </div>
+            </div>
+            <div className="product-item border hover:shadow-lg cursor-pointer transition-all 
+            select-none">
+                <div className="product-img">
+                    <img src="https://productimages.hepsiburada.net/s/142/550/110000095044433.jpg/format:webp" alt=""
+                        className="h-28 object-scale-down w-full border-b" />
+                </div>
+                <div className="product-info flex flex-col p-3 overflow-wrap: break-words">
+                    <span className="font-bold">Apacer AH4U16G32C28Y7GAA-2 Panther Black-Gold 16GB (2X8GB Kit) 3200MHZ Ddr4</span>
+                    <span>1.529,00₺</span>
+                </div>
+            </div>
+            <div className="product-item border hover:shadow-lg cursor-pointer transition-all 
+            select-none">
+                <div className="product-img">
+                    <img src="https://productimages.hepsiburada.net/s/142/550/110000095044433.jpg/format:webp" alt=""
+                        className="h-28 object-scale-down w-full border-b" />
+                </div>
+                <div className="product-info flex flex-col p-3 overflow-wrap: break-words">
+                    <span className="font-bold">Apacer AH4U16G32C28Y7GAA-2 Panther Black-Gold 16GB (2X8GB Kit) 3200MHZ Ddr4</span>
+                    <span>1.529,00₺</span>
+                </div>
+            </div>
+            <div className="product-item border hover:shadow-lg cursor-pointer transition-all 
+            select-none">
+                <div className="product-img">
+                    <img src="https://productimages.hepsiburada.net/s/142/550/110000095044433.jpg/format:webp" alt=""
+                        className="h-28 object-scale-down w-full border-b" />
+                </div>
+                <div className="product-info flex flex-col p-3 overflow-wrap: break-words">
+                    <span className="font-bold">Apacer AH4U16G32C28Y7GAA-2 Panther Black-Gold 16GB (2X8GB Kit) 3200MHZ Ddr4</span>
+                    <span>1.529,00₺</span>
+                </div>
+            </div>
+            <div className="product-item border hover:shadow-lg cursor-pointer transition-all 
+            select-none">
+                <div className="product-img">
+                    <img src="https://productimages.hepsiburada.net/s/142/550/110000095044433.jpg/format:webp" alt=""
+                        className="h-28 object-scale-down w-full border-b" />
+                </div>
+                <div className="product-info flex flex-col p-3 overflow-wrap: break-words">
+                    <span className="font-bold">Apacer AH4U16G32C28Y7GAA-2 Panther Black-Gold 16GB (2X8GB Kit) 3200MHZ Ddr4</span>
+                    <span>1.529,00₺</span>
+                </div>
+            </div>
+            <div className="product-item border hover:shadow-lg cursor-pointer transition-all 
+            select-none">
+                <div className="product-img">
+                    <img src="https://productimages.hepsiburada.net/s/142/550/110000095044433.jpg/format:webp" alt=""
+                        className="h-28 object-scale-down w-full border-b" />
+                </div>
+                <div className="product-info flex flex-col p-3 overflow-wrap: break-words">
+                    <span className="font-bold">Apacer AH4U16G32C28Y7GAA-2 Panther Black-Gold 16GB (2X8GB Kit) 3200MHZ Ddr4</span>
+                    <span>1.529,00₺</span>
+                </div>
+            </div>
+            <div className="product-item border hover:shadow-lg cursor-pointer transition-all 
+            select-none">
+                <div className="product-img">
+                    <img src="https://productimages.hepsiburada.net/s/142/550/110000095044433.jpg/format:webp" alt=""
+                        className="h-28 object-scale-down w-full border-b" />
+                </div>
+                <div className="product-info flex flex-col p-3 overflow-wrap: break-words">
+                    <span className="font-bold">Apacer AH4U16G32C28Y7GAA-2 Panther Black-Gold 16GB (2X8GB Kit) 3200MHZ Ddr4</span>
+                    <span>1.529,00₺</span>
+                </div>
+            </div>
+            <div className="product-item border hover:shadow-lg cursor-pointer transition-all 
+            select-none">
+                <div className="product-img">
+                    <img src="https://productimages.hepsiburada.net/s/142/550/110000095044433.jpg/format:webp" alt=""
+                        className="h-28 object-scale-down w-full border-b" />
+                </div>
+                <div className="product-info flex flex-col p-3 overflow-wrap: break-words">
+                    <span className="font-bold">Apacer AH4U16G32C28Y7GAA-2 Panther Black-Gold 16GB (2X8GB Kit) 3200MHZ Ddr4</span>
+                    <span>1.529,00₺</span>
+                </div>
+            </div>
+            <div className="product-item border hover:shadow-lg cursor-pointer transition-all 
+            select-none">
+                <div className="product-img">
+                    <img src="https://productimages.hepsiburada.net/s/142/550/110000095044433.jpg/format:webp" alt=""
+                        className="h-28 object-scale-down w-full border-b" />
+                </div>
+                <div className="product-info flex flex-col p-3 overflow-wrap: break-words">
+                    <span className="font-bold">Apacer AH4U16G32C28Y7GAA-2 Panther Black-Gold 16GB (2X8GB Kit) 3200MHZ Ddr4</span>
+                    <span>1.529,00₺</span>
+                </div>
+            </div>
+            <div className="product-item border hover:shadow-lg cursor-pointer transition-all 
+            select-none">
+                <div className="product-img">
+                    <img src="https://productimages.hepsiburada.net/s/142/550/110000095044433.jpg/format:webp" alt=""
+                        className="h-28 object-scale-down w-full border-b" />
+                </div>
+                <div className="product-info flex flex-col p-3 overflow-wrap: break-words">
+                    <span className="font-bold">Apacer AH4U16G32C28Y7GAA-2 Panther Black-Gold 16GB (2X8GB Kit) 3200MHZ Ddr4</span>
+                    <span>1.529,00₺</span>
+                </div>
+            </div>
+            <div className="product-item border hover:shadow-lg cursor-pointer transition-all 
+            select-none">
+                <div className="product-img">
+                    <img src="https://productimages.hepsiburada.net/s/142/550/110000095044433.jpg/format:webp" alt=""
+                        className="h-28 object-scale-down w-full border-b" />
+                </div>
+                <div className="product-info flex flex-col p-3 overflow-wrap: break-words">
+                    <span className="font-bold">Apacer AH4U16G32C28Y7GAA-2 Panther Black-Gold 16GB (2X8GB Kit) 3200MHZ Ddr4</span>
+                    <span>1.529,00₺</span>
+                </div>
+            </div>
+            <div className="product-item border hover:shadow-lg cursor-pointer transition-all 
+            select-none">
+                <div className="product-img">
+                    <img src="https://productimages.hepsiburada.net/s/142/550/110000095044433.jpg/format:webp" alt=""
+                        className="h-28 object-scale-down w-full border-b" />
+                </div>
+                <div className="product-info flex flex-col p-3 overflow-wrap: break-words">
+                    <span className="font-bold">Apacer AH4U16G32C28Y7GAA-2 Panther Black-Gold 16GB (2X8GB Kit) 3200MHZ Ddr4</span>
+                    <span>1.529,00₺</span>
+                </div>
+            </div>
+            <div className="product-item border hover:shadow-lg cursor-pointer transition-all 
+            select-none">
+                <div className="product-img">
+                    <img src="https://productimages.hepsiburada.net/s/142/550/110000095044433.jpg/format:webp" alt=""
+                        className="h-28 object-scale-down w-full border-b" />
+                </div>
+                <div className="product-info flex flex-col p-3 overflow-wrap: break-words">
+                    <span className="font-bold">Apacer AH4U16G32C28Y7GAA-2 Panther Black-Gold 16GB (2X8GB Kit) 3200MHZ Ddr4</span>
+                    <span>1.529,00₺</span>
+                </div>
+            </div>
+            <div className="product-item border hover:shadow-lg cursor-pointer transition-all 
+            select-none">
+                <div className="product-img">
+                    <img src="https://productimages.hepsiburada.net/s/142/550/110000095044433.jpg/format:webp" alt=""
+                        className="h-28 object-scale-down w-full border-b" />
+                </div>
+                <div className="product-info flex flex-col p-3 overflow-wrap: break-words">
+                    <span className="font-bold">Apacer AH4U16G32C28Y7GAA-2 Panther Black-Gold 16GB (2X8GB Kit) 3200MHZ Ddr4</span>
+                    <span>1.529,00₺</span>
+                </div>
+            </div>
+            <div className="product-item border hover:shadow-lg cursor-pointer transition-all 
+            select-none">
+                <div className="product-img">
+                    <img src="https://productimages.hepsiburada.net/s/142/550/110000095044433.jpg/format:webp" alt=""
+                        className="h-28 object-scale-down w-full border-b" />
+                </div>
+                <div className="product-info flex flex-col p-3 overflow-wrap: break-words">
                     <span className="font-bold">Apacer AH4U16G32C28Y7GAA-2 Panther Black-Gold 16GB (2X8GB Kit) 3200MHZ Ddr4</span>
                     <span>1.529,00₺</span>
                 </div>

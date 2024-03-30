@@ -84,17 +84,17 @@ const CreateBill = ({ isModalOpen, setIsModalOpen }) => {
                     <div
                         className="flex justify-between">
                         <span>Ara Toplam</span>
-                        <span>549.00TL</span>
+                        <span>549.00tl</span>
                     </div>
                     <div
                         className="flex justify-between my-2">
                         <span>KDV Toplam %8</span>
-                        <span className="text-red-600">+43.93TL</span>
+                        <span className="text-red-600">+43.93tl</span>
                     </div>
                     <div
                         className="flex justify-between">
                         <b>Toplam</b>
-                        <b>549.00TL</b>
+                        <b>549.00tl</b>
                     </div>
                     <div className="flex justify-end">
                         <Button

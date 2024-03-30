@@ -53,13 +53,13 @@ const Header = () => {
                             Faturalar
                         </span>
                     </Link>
-                    <Link to={"/"} className='menu-link flex flex-col hover:text-[#40a9ff] trasition-all'>
+                    <Link to={"/customers"} className='menu-link flex flex-col hover:text-[#40a9ff] trasition-all'>
                         <UserOutlined className='md:text-2xl text-xl block' />
                         <span className='md:text-xs text-[10x] text-center'>
                             Müşteriler
                         </span>
                     </Link>
-                    <Link to={"/"} className='menu-link flex flex-col hover:text-[#40a9ff] trasition-all'>
+                    <Link to={"/statistic"} className='menu-link flex flex-col hover:text-[#40a9ff] trasition-all'>
                         <PieChartOutlined className='md:text-2xl text-xl block' />
                         <span className='md:text-xs text-[10x] text-center'>
                             İstatistikler
