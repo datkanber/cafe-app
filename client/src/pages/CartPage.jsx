@@ -4,7 +4,6 @@ import { useState } from "react";
 import CreateBill from "../components/cart/CreateBill";
 
 
-
 const CartPage = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const dataSource = [
@@ -46,7 +45,8 @@ const CartPage = () => {
         <>
             <Header />
             <div
-                className="px-6">
+                className="px-6 pt-5">
+                <h1 className="text-4xl font-bold text-center mb-4 pb-10">Sepet</h1>
                 <Table
                     dataSource={dataSource}
                     columns={columns}

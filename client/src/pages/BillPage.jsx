@@ -46,8 +46,8 @@ const BillPage = () => {
         <>
             <Header />
             <div
-                className="px-6">
-                <h1 className="text-4xl font-bold text-center mb-4">Faturalar</h1>
+                className="px-6 pt-5">
+                <h1 className="text-4xl font-bold text-center mb-4 pb-10">Faturalar</h1>
                 <Table
                     dataSource={dataSource}
                     columns={columns}

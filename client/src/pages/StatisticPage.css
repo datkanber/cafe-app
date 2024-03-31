@@ -1,0 +1,5 @@
+/* StatisticPage.css içinde */
+.chart-container {
+  width: 100%;
+  height: 300px; /* Grafikler için sabit bir yükseklik */
+}
