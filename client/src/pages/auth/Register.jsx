@@ -4,11 +4,14 @@ import AuthCarousel from "../../components/auth/AuthCarousel";
 
 const Register = () => {
     return (
-        <div className='h-screen'>
+        <div className='h-screen hover:shadow-lg cursor-pointer transition-all 
+        select-none'>
             <div className='flex justify-between h-full'>
                 <div className='xl:px-20 px-10 flex flex-col h-full w-full justify-center relative'>
-                    <h1 className='text-center text-5xl font-bold mb-3 pb-2'>PCIS</h1>
-                    <Form layout="vertical">
+                    <div className="logo  flex justify-left pb-11">
+                        <img src="https://www.pcis.com.tr/data/_images/logo2.png" alt="logo" />
+                    </div>
+                    <Form layout="vertical font-medium">
                         <Form.Item
                             label="Kullanıcı Adı"
                             name="username"
@@ -60,7 +63,7 @@ const Register = () => {
                         <Form.Item>
                             <Button type="primary"
                                 htmlType="submit"
-                                className="w-full"
+                                className="w-full font-medium"
                                 size="Large"
                             >
                                 Kaydol
@@ -71,7 +74,7 @@ const Register = () => {
                         <Link to="/login" className="text-blue-400">Şimdi giriş yap</Link>
                     </div>
                 </div>
-                <div className="xl:w-4/6 lg:w-3/5 md:w-1/2 md:flex hidden bg-[#65735C] h-full">
+                <div className="xl:w-4/6 lg:w-3/5 md:w-1/2 md:flex hidden bg-[#4096FF] h-full">
                     <div className="w-full h-full flex items-center">
                         <div className="w-full">
                             <Carousel className="!h-full px-6">

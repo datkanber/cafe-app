@@ -7,7 +7,9 @@ const HomePage = () => {
     return (
         <>
             <Header />
-            <div className='home px-6 flex md:flex-row flex-col justify-between gap-10 md:pb-0 pb-24'>
+            <div className='home px-6 flex md:flex-row flex-col justify-between 
+            gap-10 md:pb-0 pb-24 hover:shadow-lg cursor-pointer transition-all 
+            select-none'>
                 <div className="categories overflow-auto max-h-[calc(100vh_-_104px)] md:pb-10">
                     <Categories />
                 </div>

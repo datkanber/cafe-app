@@ -2,23 +2,45 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Electrolize&display=swap");
+
 body {
   margin: 0;
   font-family: "Electrolize", sans-serif;
-  @apply bg-gray-50
-}
-.ant-btn-primary{
-  background-color: #1677ff;
+  @apply bg-transparent;
 }
 
-@media (min-width: 768px){
-  body{
+.ant-btn-primary {
+  background-image: linear-gradient(to right, #1c3a60, #4096FF);
+  border-radius: 8px; /* Butonun kenar yuvarlaklığı ile uyumlu olması için */
+  display: inline-block; /* Butonun boyutunu sınırlamak için */
+}
+.custom-button {
+  background-image: linear-gradient(to right, #1c3a60, #4096FF);
+  border-radius: 8px; /* Butonun kenar yuvarlaklığı ile uyumlu olması için */
+  display: inline-block; /* Butonun boyutunu sınırlamak için */
+}
+
+.custom-button:hover {
+  background-image: linear-gradient(to right, #4096FF, #4CAF50);
+}
+
+.custom-danger-button {
+  background-image: linear-gradient(to right, #8B0000, #E23E57);
+  border-radius: 8px; /* Butonun kenar yuvarlaklığı ile uyumlu olması için */
+  display: inline-block; /* Butonun boyutunu sınırlamak için */
+}
+
+.custom-danger-button:hover {
+  background-image: linear-gradient(to right, #E23E57, #FF6347); /* Hover durumu için daha açık kırmızı tonlarında gradient */
+}
+
+@media (min-width: 768px) {
+  body {
     overflow: hidden;
   }
 
-  
-  .categories::-webkit-scrollbar{
+  .categories::-webkit-scrollbar {
     display: none;
   }
 }

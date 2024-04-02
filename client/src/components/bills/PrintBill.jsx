@@ -2,7 +2,8 @@ import { Modal, Button } from 'antd';
 
 const PrintBill = ({ isModalOpen, setIsModalOpen }) => {
     return (
-        <Modal
+        <Modal className='cursor-pointer transition-all 
+        select-none'
             title="Fatura Yazdır"
             open={isModalOpen}
             footer={false}

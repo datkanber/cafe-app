@@ -45,7 +45,8 @@ const CartPage = () => {
         <>
             <Header />
             <div
-                className="px-6 pt-5">
+                className="px-6 pt-5 cursor-pointer transition-all 
+                select-none">
                 <h1 className="text-4xl font-bold text-center mb-4 pb-10">Sepet</h1>
                 <Table
                     dataSource={dataSource}

@@ -13,7 +13,8 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
     return (
-        <div className='border-b mb-6'>
+        <div className='border-b mb-6 shadow-lg cursor-pointer transition-all 
+        select-none'>
             <header className='py-3 px-6 flex justify-between items-center gap-10'>
                 <div className="logo">
                     <img src="https://www.pcis.com.tr/data/_images/logo2.png" alt="logo" />

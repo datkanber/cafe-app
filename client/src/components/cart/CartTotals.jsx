@@ -7,9 +7,9 @@ import {
 
 const CartTotals = () => {
     return (
-        <div className='cart h-full max-h-[calc(100vh_-_88px)] flex flex-col'>
-            <h2 className='bg-blue-600 text-center py-4 text-white 
-        font-bold tracking-wide'>
+        <div className='cart h-full max-h-[calc(100vh_-_88px)] flex flex-col cursor-pointer transition-all 
+        select-none'>
+            <h2 className="text-center py-4 text-white font-bold tracking-wide transition duration-300 hover:shadow-2xl rounded-b-full bg-gradient-to-r from-blue-800 to-blue-600 hover:from-blue-600 hover:to-blue-400">
                 Sepetteki Ürünler
             </h2>
             <ul className='cart-items px-2 flex-col gap-y-3 py-2 overflow-y-auto'>
@@ -18,7 +18,7 @@ const CartTotals = () => {
                         <img src="https://productimages.hepsiburada.net/s/76/550/110000018390364.jpg/format:webp"
                             alt=""
                             className="w-11 h-13 object-cover" />
-                        <div className="flex flex-col ml-2" style={{flexShrink: 1, maxWidth: '250px', overflowWrap: 'break-word'}}>
+                        <div className="flex flex-col ml-2" style={{ flexShrink: 1, maxWidth: '250px', overflowWrap: 'break-word' }}>
                             <b>Gameforce GF-8010 Cold 4X120MM Rainbow Fanlı Oyuncu Kasası</b>
                             <span>1.499,90₺ x 3</span>
                         </div>
@@ -46,7 +46,7 @@ const CartTotals = () => {
                         <img src="https://cdn.britannica.com/77/170477-050-1C747EE3/Laptop-computer.jpg"
                             alt=""
                             className="w-11 h-13 object-cover" />
-                        <div className="flex flex-col ml-2" style={{flexShrink: 1, maxWidth: '250px', overflowWrap: 'break-word'}}>
+                        <div className="flex flex-col ml-2" style={{ flexShrink: 1, maxWidth: '250px', overflowWrap: 'break-word' }}>
                             <b>Computer i9 X Pro PCIS Version Boosted GPU</b>
                             <span>129.999₺ x 2</span>
                         </div>
@@ -73,7 +73,7 @@ const CartTotals = () => {
                         <img src="https://productimages.hepsiburada.net/s/393/550/110000417330440.jpg/format:webp"
                             alt=""
                             className="w-11 h-13 object-cover" />
-                        <div className="flex flex-col ml-2" style={{flexShrink: 1, maxWidth: '250px', overflowWrap: 'break-word'}}>
+                        <div className="flex flex-col ml-2" style={{ flexShrink: 1, maxWidth: '250px', overflowWrap: 'break-word' }}>
                             <b>OEM 512 MB PC133 Mhz Sd Ram</b>
                             <span>1.229,79₺ x 2</span>
                         </div>
@@ -115,11 +115,11 @@ const CartTotals = () => {
                     </div>
                 </div>
                 <div className="py-4 px-2">
-                    <Button type="primary" size="large" className="w-full">
+                    <Button type="primary" size="large" className="w-full custom-button custom-button:hover">
                         Sipariş Oluştur</Button>
-                    <Button type="primary" size="large" className="w-full 
-                    mt-2 flex items-center justify-center" icon={<ClearOutlined />}
-                        danger>
+                    <Button type="primary" size="large" className="w-full custom-danger-button
+                    mt-2 flex items-center justify-center custom-danger-button:hover" icon={<ClearOutlined />}
+                        >
                         Temizle</Button>
                 </div>
             </div>

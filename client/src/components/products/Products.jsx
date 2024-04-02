@@ -19,7 +19,7 @@ const Products = () => {
             select-none">
                 <div className="product-img">
                     <img src="https://productimages.hepsiburada.net/s/42/550/10737832329266.jpg/format:webp" alt=""
-                        className="h-28 object-scale-down w-full border-b" />
+                        className="h-28 object-cover w-full border-b" />
                 </div>
                 <div className="product-info flex flex-col p-3">
                     <span className="font-bold">Kingston Value 8GB 3200 MHz DDR4 SODIMM Ram</span>
@@ -52,7 +52,7 @@ const Products = () => {
             select-none">
                 <div className="product-img">
                     <img src="https://productimages.hepsiburada.net/s/259/550/110000242777000.jpg/format:webp" alt=""
-                        className="h-28 object-scale-down w-full border-b" /> 
+                        className="h-28 object-scale-down w-full border-b" />
                 </div>
                 <div className="product-info flex flex-col p-3">
                     <span className="font-bold">Id-Coolıng SE-214-XT Argb 4pin Pwm 120MM Kule Tipi İşlemci Soğutucu</span>
@@ -117,254 +117,122 @@ const Products = () => {
             <div className="product-item border hover:shadow-lg cursor-pointer transition-all 
             select-none">
                 <div className="product-img">
-                    <img src="https://productimages.hepsiburada.net/s/142/550/110000095044433.jpg/format:webp" alt=""
-                        className="h-28 object-scale-down w-full border-b" />
-                </div>
-                <div className="product-info flex flex-col p-3 overflow-wrap: break-words">
-                    <span className="font-bold">Apacer AH4U16G32C28Y7GAA-2 Panther Black-Gold 16GB (2X8GB Kit) 3200MHZ Ddr4</span>
-                    <span>1.529,00₺</span>
-                </div>
-            </div>
-            <div className="product-item border hover:shadow-lg cursor-pointer transition-all 
-            select-none">
-                <div className="product-img">
-                    <img src="https://productimages.hepsiburada.net/s/142/550/110000095044433.jpg/format:webp" alt=""
-                        className="h-28 object-scale-down w-full border-b" />
-                </div>
-                <div className="product-info flex flex-col p-3 overflow-wrap: break-words">
-                    <span className="font-bold">Apacer AH4U16G32C28Y7GAA-2 Panther Black-Gold 16GB (2X8GB Kit) 3200MHZ Ddr4</span>
-                    <span>1.529,00₺</span>
-                </div>
-            </div>
-            <div className="product-item border hover:shadow-lg cursor-pointer transition-all 
-            select-none">
-                <div className="product-img">
-                    <img src="https://productimages.hepsiburada.net/s/142/550/110000095044433.jpg/format:webp" alt=""
-                        className="h-28 object-scale-down w-full border-b" />
-                </div>
-                <div className="product-info flex flex-col p-3 overflow-wrap: break-words">
-                    <span className="font-bold">Apacer AH4U16G32C28Y7GAA-2 Panther Black-Gold 16GB (2X8GB Kit) 3200MHZ Ddr4</span>
-                    <span>1.529,00₺</span>
-                </div>
-            </div>
-            <div className="product-item border hover:shadow-lg cursor-pointer transition-all 
-            select-none">
-                <div className="product-img">
-                    <img src="https://productimages.hepsiburada.net/s/142/550/110000095044433.jpg/format:webp" alt=""
-                        className="h-28 object-scale-down w-full border-b" />
-                </div>
-                <div className="product-info flex flex-col p-3 overflow-wrap: break-words">
-                    <span className="font-bold">Apacer AH4U16G32C28Y7GAA-2 Panther Black-Gold 16GB (2X8GB Kit) 3200MHZ Ddr4</span>
-                    <span>1.529,00₺</span>
-                </div>
-            </div>
-            <div className="product-item border hover:shadow-lg cursor-pointer transition-all 
-            select-none">
-                <div className="product-img">
-                    <img src="https://productimages.hepsiburada.net/s/142/550/110000095044433.jpg/format:webp" alt=""
-                        className="h-28 object-scale-down w-full border-b" />
-                </div>
-                <div className="product-info flex flex-col p-3 overflow-wrap: break-words">
-                    <span className="font-bold">Apacer AH4U16G32C28Y7GAA-2 Panther Black-Gold 16GB (2X8GB Kit) 3200MHZ Ddr4</span>
-                    <span>1.529,00₺</span>
-                </div>
-            </div>
-            <div className="product-item border hover:shadow-lg cursor-pointer transition-all 
-            select-none">
-                <div className="product-img">
-                    <img src="https://productimages.hepsiburada.net/s/142/550/110000095044433.jpg/format:webp" alt=""
-                        className="h-28 object-scale-down w-full border-b" />
-                </div>
-                <div className="product-info flex flex-col p-3 overflow-wrap: break-words">
-                    <span className="font-bold">Apacer AH4U16G32C28Y7GAA-2 Panther Black-Gold 16GB (2X8GB Kit) 3200MHZ Ddr4</span>
-                    <span>1.529,00₺</span>
-                </div>
-            </div>
-            <div className="product-item border hover:shadow-lg cursor-pointer transition-all 
-            select-none">
-                <div className="product-img">
-                    <img src="https://productimages.hepsiburada.net/s/142/550/110000095044433.jpg/format:webp" alt=""
-                        className="h-28 object-scale-down w-full border-b" />
-                </div>
-                <div className="product-info flex flex-col p-3 overflow-wrap: break-words">
-                    <span className="font-bold">Apacer AH4U16G32C28Y7GAA-2 Panther Black-Gold 16GB (2X8GB Kit) 3200MHZ Ddr4</span>
-                    <span>1.529,00₺</span>
-                </div>
-            </div>
-            <div className="product-item border hover:shadow-lg cursor-pointer transition-all 
-            select-none">
-                <div className="product-img">
-                    <img src="https://productimages.hepsiburada.net/s/142/550/110000095044433.jpg/format:webp" alt=""
-                        className="h-28 object-scale-down w-full border-b" />
-                </div>
-                <div className="product-info flex flex-col p-3 overflow-wrap: break-words">
-                    <span className="font-bold">Apacer AH4U16G32C28Y7GAA-2 Panther Black-Gold 16GB (2X8GB Kit) 3200MHZ Ddr4</span>
-                    <span>1.529,00₺</span>
-                </div>
-            </div>
-            <div className="product-item border hover:shadow-lg cursor-pointer transition-all 
-            select-none">
-                <div className="product-img">
-                    <img src="https://productimages.hepsiburada.net/s/142/550/110000095044433.jpg/format:webp" alt=""
-                        className="h-28 object-scale-down w-full border-b" />
-                </div>
-                <div className="product-info flex flex-col p-3 overflow-wrap: break-words">
-                    <span className="font-bold">Apacer AH4U16G32C28Y7GAA-2 Panther Black-Gold 16GB (2X8GB Kit) 3200MHZ Ddr4</span>
-                    <span>1.529,00₺</span>
-                </div>
-            </div>
-            <div className="product-item border hover:shadow-lg cursor-pointer transition-all 
-            select-none">
-                <div className="product-img">
-                    <img src="https://productimages.hepsiburada.net/s/142/550/110000095044433.jpg/format:webp" alt=""
-                        className="h-28 object-scale-down w-full border-b" />
-                </div>
-                <div className="product-info flex flex-col p-3 overflow-wrap: break-words">
-                    <span className="font-bold">Apacer AH4U16G32C28Y7GAA-2 Panther Black-Gold 16GB (2X8GB Kit) 3200MHZ Ddr4</span>
-                    <span>1.529,00₺</span>
-                </div>
-            </div>
-            <div className="product-item border hover:shadow-lg cursor-pointer transition-all 
-            select-none">
-                <div className="product-img">
-                    <img src="https://productimages.hepsiburada.net/s/142/550/110000095044433.jpg/format:webp" alt=""
-                        className="h-28 object-scale-down w-full border-b" />
-                </div>
-                <div className="product-info flex flex-col p-3 overflow-wrap: break-words">
-                    <span className="font-bold">Apacer AH4U16G32C28Y7GAA-2 Panther Black-Gold 16GB (2X8GB Kit) 3200MHZ Ddr4</span>
-                    <span>1.529,00₺</span>
-                </div>
-            </div>
-            <div className="product-item border hover:shadow-lg cursor-pointer transition-all 
-            select-none">
-                <div className="product-img">
-                    <img src="https://productimages.hepsiburada.net/s/142/550/110000095044433.jpg/format:webp" alt=""
-                        className="h-28 object-scale-down w-full border-b" />
-                </div>
-                <div className="product-info flex flex-col p-3 overflow-wrap: break-words">
-                    <span className="font-bold">Apacer AH4U16G32C28Y7GAA-2 Panther Black-Gold 16GB (2X8GB Kit) 3200MHZ Ddr4</span>
-                    <span>1.529,00₺</span>
-                </div>
-            </div>
-            <div className="product-item border hover:shadow-lg cursor-pointer transition-all 
-            select-none">
-                <div className="product-img">
-                    <img src="https://productimages.hepsiburada.net/s/142/550/110000095044433.jpg/format:webp" alt=""
-                        className="h-28 object-scale-down w-full border-b" />
-                </div>
-                <div className="product-info flex flex-col p-3 overflow-wrap: break-words">
-                    <span className="font-bold">Apacer AH4U16G32C28Y7GAA-2 Panther Black-Gold 16GB (2X8GB Kit) 3200MHZ Ddr4</span>
-                    <span>1.529,00₺</span>
-                </div>
-            </div>
-            <div className="product-item border hover:shadow-lg cursor-pointer transition-all 
-            select-none">
-                <div className="product-img">
-                    <img src="https://productimages.hepsiburada.net/s/142/550/110000095044433.jpg/format:webp" alt=""
-                        className="h-28 object-scale-down w-full border-b" />
-                </div>
-                <div className="product-info flex flex-col p-3 overflow-wrap: break-words">
-                    <span className="font-bold">Apacer AH4U16G32C28Y7GAA-2 Panther Black-Gold 16GB (2X8GB Kit) 3200MHZ Ddr4</span>
-                    <span>1.529,00₺</span>
-                </div>
-            </div>
-            <div className="product-item border hover:shadow-lg cursor-pointer transition-all 
-            select-none">
-                <div className="product-img">
-                    <img src="https://productimages.hepsiburada.net/s/142/550/110000095044433.jpg/format:webp" alt=""
-                        className="h-28 object-scale-down w-full border-b" />
-                </div>
-                <div className="product-info flex flex-col p-3 overflow-wrap: break-words">
-                    <span className="font-bold">Apacer AH4U16G32C28Y7GAA-2 Panther Black-Gold 16GB (2X8GB Kit) 3200MHZ Ddr4</span>
-                    <span>1.529,00₺</span>
-                </div>
-            </div>
-            <div className="product-item border hover:shadow-lg cursor-pointer transition-all 
-            select-none">
-                <div className="product-img">
-                    <img src="https://productimages.hepsiburada.net/s/142/550/110000095044433.jpg/format:webp" alt=""
-                        className="h-28 object-scale-down w-full border-b" />
-                </div>
-                <div className="product-info flex flex-col p-3 overflow-wrap: break-words">
-                    <span className="font-bold">Apacer AH4U16G32C28Y7GAA-2 Panther Black-Gold 16GB (2X8GB Kit) 3200MHZ Ddr4</span>
-                    <span>1.529,00₺</span>
-                </div>
-            </div>
-            <div className="product-item border hover:shadow-lg cursor-pointer transition-all 
-            select-none">
-                <div className="product-img">
-                    <img src="https://productimages.hepsiburada.net/s/142/550/110000095044433.jpg/format:webp" alt=""
-                        className="h-28 object-scale-down w-full border-b" />
-                </div>
-                <div className="product-info flex flex-col p-3 overflow-wrap: break-words">
-                    <span className="font-bold">Apacer AH4U16G32C28Y7GAA-2 Panther Black-Gold 16GB (2X8GB Kit) 3200MHZ Ddr4</span>
-                    <span>1.529,00₺</span>
-                </div>
-            </div>
-            <div className="product-item border hover:shadow-lg cursor-pointer transition-all 
-            select-none">
-                <div className="product-img">
-                    <img src="https://productimages.hepsiburada.net/s/142/550/110000095044433.jpg/format:webp" alt=""
-                        className="h-28 object-scale-down w-full border-b" />
-                </div>
-                <div className="product-info flex flex-col p-3 overflow-wrap: break-words">
-                    <span className="font-bold">Apacer AH4U16G32C28Y7GAA-2 Panther Black-Gold 16GB (2X8GB Kit) 3200MHZ Ddr4</span>
-                    <span>1.529,00₺</span>
-                </div>
-            </div>
-            <div className="product-item border hover:shadow-lg cursor-pointer transition-all 
-            select-none">
-                <div className="product-img">
-                    <img src="https://productimages.hepsiburada.net/s/142/550/110000095044433.jpg/format:webp" alt=""
-                        className="h-28 object-scale-down w-full border-b" />
-                </div>
-                <div className="product-info flex flex-col p-3 overflow-wrap: break-words">
-                    <span className="font-bold">Apacer AH4U16G32C28Y7GAA-2 Panther Black-Gold 16GB (2X8GB Kit) 3200MHZ Ddr4</span>
-                    <span>1.529,00₺</span>
-                </div>
-            </div>
-            <div className="product-item border hover:shadow-lg cursor-pointer transition-all 
-            select-none">
-                <div className="product-img">
-                    <img src="https://productimages.hepsiburada.net/s/142/550/110000095044433.jpg/format:webp" alt=""
-                        className="h-28 object-scale-down w-full border-b" />
-                </div>
-                <div className="product-info flex flex-col p-3 overflow-wrap: break-words">
-                    <span className="font-bold">Apacer AH4U16G32C28Y7GAA-2 Panther Black-Gold 16GB (2X8GB Kit) 3200MHZ Ddr4</span>
-                    <span>1.529,00₺</span>
-                </div>
-            </div>
-            <div className="product-item border hover:shadow-lg cursor-pointer transition-all 
-            select-none">
-                <div className="product-img">
-                    <img src="https://productimages.hepsiburada.net/s/142/550/110000095044433.jpg/format:webp" alt=""
-                        className="h-28 object-scale-down w-full border-b" />
-                </div>
-                <div className="product-info flex flex-col p-3 overflow-wrap: break-words">
-                    <span className="font-bold">Apacer AH4U16G32C28Y7GAA-2 Panther Black-Gold 16GB (2X8GB Kit) 3200MHZ Ddr4</span>
-                    <span>1.529,00₺</span>
-                </div>
-            </div>
-            <div className="product-item border hover:shadow-lg cursor-pointer transition-all 
-            select-none">
-                <div className="product-img">
-                    <img src="https://productimages.hepsiburada.net/s/393/550/110000417330440.jpg/format:webp" alt=""
+                    <img src="https://productimages.hepsiburada.net/s/76/550/110000018390364.jpg/format:webp" alt=""
                         className="h-28 object-scale-down w-full border-b" />
                 </div>
                 <div className="product-info flex flex-col p-3">
-                    <span className="font-bold">OEM 512 MB PC133 Mhz Sd Ram</span>
-                    <span>1.229,79₺</span>
+                    <span className="font-bold">Gameforce GF-8010 Cold 4X120MM Rainbow Fanlı Oyuncu Kasası</span>
+                    <span>1.499,90₺</span>
                 </div>
             </div>
             <div className="product-item border hover:shadow-lg cursor-pointer transition-all 
             select-none">
                 <div className="product-img">
-                    <img src="https://productimages.hepsiburada.net/s/142/550/110000094874370.jpg/format:webp" alt=""
+                    <img src="https://productimages.hepsiburada.net/s/76/550/110000018390364.jpg/format:webp" alt=""
                         className="h-28 object-scale-down w-full border-b" />
                 </div>
                 <div className="product-info flex flex-col p-3">
-                    <span className="font-bold">Samsung M471B1G73QH0-YK0 PC3L-12800S 8gb 1600MHZ Ddr3 Notebook Ram</span>
-                    <span>389,00₺</span>
+                    <span className="font-bold">Gameforce GF-8010 Cold 4X120MM Rainbow Fanlı Oyuncu Kasası</span>
+                    <span>1.499,90₺</span>
+                </div>
+            </div>
+            <div className="product-item border hover:shadow-lg cursor-pointer transition-all 
+            select-none">
+                <div className="product-img">
+                    <img src="https://productimages.hepsiburada.net/s/76/550/110000018390364.jpg/format:webp" alt=""
+                        className="h-28 object-scale-down w-full border-b" />
+                </div>
+                <div className="product-info flex flex-col p-3">
+                    <span className="font-bold">Gameforce GF-8010 Cold 4X120MM Rainbow Fanlı Oyuncu Kasası</span>
+                    <span>1.499,90₺</span>
+                </div>
+            </div>
+            <div className="product-item border hover:shadow-lg cursor-pointer transition-all 
+            select-none">
+                <div className="product-img">
+                    <img src="https://productimages.hepsiburada.net/s/76/550/110000018390364.jpg/format:webp" alt=""
+                        className="h-28 object-scale-down w-full border-b" />
+                </div>
+                <div className="product-info flex flex-col p-3">
+                    <span className="font-bold">Gameforce GF-8010 Cold 4X120MM Rainbow Fanlı Oyuncu Kasası</span>
+                    <span>1.499,90₺</span>
+                </div>
+            </div>
+            <div className="product-item border hover:shadow-lg cursor-pointer transition-all 
+            select-none">
+                <div className="product-img">
+                    <img src="https://productimages.hepsiburada.net/s/76/550/110000018390364.jpg/format:webp" alt=""
+                        className="h-28 object-scale-down w-full border-b" />
+                </div>
+                <div className="product-info flex flex-col p-3">
+                    <span className="font-bold">Gameforce GF-8010 Cold 4X120MM Rainbow Fanlı Oyuncu Kasası</span>
+                    <span>1.499,90₺</span>
+                </div>
+            </div>
+            <div className="product-item border hover:shadow-lg cursor-pointer transition-all 
+            select-none">
+                <div className="product-img">
+                    <img src="https://productimages.hepsiburada.net/s/76/550/110000018390364.jpg/format:webp" alt=""
+                        className="h-28 object-scale-down w-full border-b" />
+                </div>
+                <div className="product-info flex flex-col p-3">
+                    <span className="font-bold">Gameforce GF-8010 Cold 4X120MM Rainbow Fanlı Oyuncu Kasası</span>
+                    <span>1.499,90₺</span>
+                </div>
+            </div>
+            <div className="product-item border hover:shadow-lg cursor-pointer transition-all 
+            select-none">
+                <div className="product-img">
+                    <img src="https://productimages.hepsiburada.net/s/76/550/110000018390364.jpg/format:webp" alt=""
+                        className="h-28 object-scale-down w-full border-b" />
+                </div>
+                <div className="product-info flex flex-col p-3">
+                    <span className="font-bold">Gameforce GF-8010 Cold 4X120MM Rainbow Fanlı Oyuncu Kasası</span>
+                    <span>1.499,90₺</span>
+                </div>
+            </div>
+            <div className="product-item border hover:shadow-lg cursor-pointer transition-all 
+            select-none">
+                <div className="product-img">
+                    <img src="https://productimages.hepsiburada.net/s/76/550/110000018390364.jpg/format:webp" alt=""
+                        className="h-28 object-scale-down w-full border-b" />
+                </div>
+                <div className="product-info flex flex-col p-3">
+                    <span className="font-bold">Gameforce GF-8010 Cold 4X120MM Rainbow Fanlı Oyuncu Kasası</span>
+                    <span>1.499,90₺</span>
+                </div>
+            </div>
+            <div className="product-item border hover:shadow-lg cursor-pointer transition-all 
+            select-none">
+                <div className="product-img">
+                    <img src="https://productimages.hepsiburada.net/s/76/550/110000018390364.jpg/format:webp" alt=""
+                        className="h-28 object-scale-down w-full border-b" />
+                </div>
+                <div className="product-info flex flex-col p-3">
+                    <span className="font-bold">Gameforce GF-8010 Cold 4X120MM Rainbow Fanlı Oyuncu Kasası</span>
+                    <span>1.499,90₺</span>
+                </div>
+            </div>
+            <div className="product-item border hover:shadow-lg cursor-pointer transition-all 
+            select-none">
+                <div className="product-img">
+                    <img src="https://productimages.hepsiburada.net/s/76/550/110000018390364.jpg/format:webp" alt=""
+                        className="h-28 object-scale-down w-full border-b" />
+                </div>
+                <div className="product-info flex flex-col p-3">
+                    <span className="font-bold">Gameforce GF-8010 Cold 4X120MM Rainbow Fanlı Oyuncu Kasası</span>
+                    <span>1.499,90₺</span>
+                </div>
+            </div>
+            <div className="product-item border hover:shadow-lg cursor-pointer transition-all 
+            select-none">
+                <div className="product-img">
+                    <img src="https://productimages.hepsiburada.net/s/76/550/110000018390364.jpg/format:webp" alt=""
+                        className="h-28 object-scale-down w-full border-b" />
+                </div>
+                <div className="product-info flex flex-col p-3">
+                    <span className="font-bold">Gameforce GF-8010 Cold 4X120MM Rainbow Fanlı Oyuncu Kasası</span>
+                    <span>1.499,90₺</span>
                 </div>
             </div>
         </div>

@@ -16,7 +16,8 @@ const CreateBill = ({ isModalOpen, setIsModalOpen }) => {
     };
 
     return (
-        <Modal
+        <Modal className='hover:shadow-lg cursor-pointer transition-all 
+        select-none'
             title="Fatura Oluştur"
             open={isModalOpen}
             footer={false}
