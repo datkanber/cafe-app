@@ -9,7 +9,7 @@ const CartTotals = () => {
     return (
         <div className='cart h-full max-h-[calc(100vh_-_88px)] flex flex-col cursor-pointer transition-all 
         select-none'>
-            <h2 className="text-center py-4 text-white font-bold tracking-wide transition duration-300 hover:shadow-2xl rounded-b-full bg-gradient-to-r from-blue-800 to-blue-600 hover:from-blue-600 hover:to-blue-400">
+            <h2 className="text-center py-4 text-white font-bold tracking-wide transition duration-300 rounded-b-full bg-gradient-to-r from-blue-800 to-blue-600 hover:from-blue-600 hover:to-blue-400">
                 Sepetteki Ürünler
             </h2>
             <ul className='cart-items px-2 flex-col gap-y-3 py-2 overflow-y-auto'>

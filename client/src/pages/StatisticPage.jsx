@@ -2,8 +2,6 @@ import { useEffect, useState } from "react";
 import Header from "../components/header/Header.jsx";
 import StatisticCard from "../components/statistics/StatisticCard.jsx";
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, PieChart, Pie, Cell } from "recharts";
-import './StatisticPage.css'; 
-
 
 const StatisticPage = () => {
     const [data, setData] = useState([]);
@@ -44,7 +42,7 @@ const StatisticPage = () => {
                 <h1 className="text-4xl font-bold text-center mb-4">İstatistiklerim</h1>
                 <div className="statistic-section">
                     <h2 className="text-lg">
-                        Hoş geldin <span className="text-green-700 font-bold text-xl">admin</span>.
+                        Hoşgeldiniz <span className="text-black-700 font-bold text-xl">adminpcis</span>
                     </h2>
                     <div className="statistic-cards grid xl:grid-cols-4 md:grid-cols-2 my-10 md:gap-10 gap-4 pb-10">
                         <StatisticCard
