@@ -9,12 +9,22 @@ body {
   font-family: "Electrolize", sans-serif;
   @apply bg-transparent;
 }
+
 .bg-gradient {
-  background-image: linear-gradient(to right, #1c3a60, #4096FF);
+  background-image: linear-gradient(to right, #4096FF, #fdfbfb);
+}
+
+.bg-gradient2 {
+  background-image: linear-gradient(to right, #4096FF, #fdfbfb);
+}
+
+.chart-container {
+  width: 100%;
+  height: 300px; /* Grafikler için sabit bir yükseklik */
 }
 
 .ant-btn-primary {
-  background-image: linear-gradient(to right, #1c3a60, #4096FF);
+  background-image: linear-gradient(to right, #4096FF, #4096FF);
   border-radius: 8px; /* Butonun kenar yuvarlaklığı ile uyumlu olması için */
   display: inline-block; /* Butonun boyutunu sınırlamak için */
 }
@@ -37,12 +47,11 @@ body {
 .custom-danger-button:hover {
   background-image: linear-gradient(to right, #E23E57, #FF6347); /* Hover durumu için daha açık kırmızı tonlarında gradient */
 }
-.chart-container {
-  width: 100%;
-  height: 300px; /* Grafikler için sabit bir yükseklik */
-}
 
 @media (min-width: 768px) {
+  .chart-container {
+    margin-bottom: 10px;
+  }
   body {
     overflow: hidden;
   }

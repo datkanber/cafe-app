@@ -1,8 +1,8 @@
-import { Form, Input, Button, Carousel } from "antd";
+import { Form, Input, Button, Carousel, Checkbox } from "antd";
 import { Link } from "react-router-dom";
 import AuthCarousel from "../../components/auth/AuthCarousel";
 
-const Register = () => {
+const Login = () => {
     return (
         <div className='h-screen hover:shadow-lg cursor-pointer transition-all 
         select-none'>
@@ -12,18 +12,6 @@ const Register = () => {
                         <img src="https://www.pcis.com.tr/data/_images/logo2.png" alt="logo" />
                     </div>
                     <Form layout="vertical font-medium">
-                        <Form.Item
-                            label="Kullanıcı Adı"
-                            name="username"
-                            rules={[
-                                {
-                                    required: true,
-                                    message: "Kullanıcı Adı Alanı Boş Bırakılamaz!",
-                                },
-                            ]}
-                        >
-                            <Input />
-                        </Form.Item>
                         <Form.Item
                             label="E-mail"
                             name="email"
@@ -48,17 +36,11 @@ const Register = () => {
                         >
                             <Input.Password />
                         </Form.Item>
-                        <Form.Item
-                            label="Parola Tekrar"
-                            name="passwordAgain"
-                            rules={[
-                                {
-                                    required: true,
-                                    message: "Parola Tekrar Alanı Boş Bırakılamaz!",
-                                },
-                            ]}
-                        >
-                            <Input.Password />
+                        <Form.Item name={"remember"} valuePropName="checked">
+                            <div className="flex justify-between items-center">
+                                <Checkbox>Remember me</Checkbox>
+                                <Link>Forgot Password?</Link>
+                            </div>
                         </Form.Item>
                         <Form.Item>
                             <Button type="primary"
@@ -66,15 +48,15 @@ const Register = () => {
                                 className="w-full font-medium"
                                 size="Large"
                             >
-                                Kaydol
+                                Login
                             </Button>
                         </Form.Item>
                     </Form>
-                    <div className="flex justify-center absolute left-0 bottom-10 w-full">Bir hesabınız var mı?&nbsp;
-                        <Link to="/login" className="text-blue-800 font-bold">Şimdi giriş yap</Link>
+                    <div className="flex justify-center absolute left-0 bottom-10 w-full">Henüz hesabınız yok mu?&nbsp;
+                        <Link to="/register" className="text-blue-800 font-bold">Şimdi kaydol</Link>
                     </div>
                 </div>
-                <div className="xl:w-4/6 lg:w-3/5 md:w-1/2 md:flex hidden bg-gradient h-full">
+                <div className="xl:w-4/6 lg:w-3/5 md:w-1/2 md:flex hidden bg-gradient2 h-full">
                     <div className="w-full h-full flex items-center">
                         <div className="w-full">
                             <Carousel className="!h-full px-6" autoplay>
@@ -95,4 +77,4 @@ const Register = () => {
     );
 };
 
-export default Register;
+export default Login;

@@ -67,7 +67,7 @@ const StatisticPage = () => {
                         />
                     </div>
                     {isDataLoaded && (
-                        <div className="flex justify-between gap-10 lg:flex-row flex-col items-center md:pl-32 pr-5">
+                        <div className="flex justify-between gap-1 lg:flex-row flex-col items-center chart-container md:pl-32 pr-5">
                             <div className="chart-container lg:w-1/2 lg:h-full h-72">
                                 <ResponsiveContainer width="100%" height="100%">
                                     <AreaChart data={data}
