@@ -78,7 +78,7 @@ const Register = () => {
                     <div className="w-full h-full flex items-center">
                         <div className="w-full">
                             <Carousel className="!h-full px-6" autoplay>
-                                <AuthCarousel img="/images/responsive.svg" title="Responsive"
+                                <AuthCarousel img="/images/admin.svg" title="Responsive"
                                     desc="Tüm Cihaz Boyutlarıyla Uyumluluk" />
                                 <AuthCarousel img="/images/statistic.svg" title="İstatistikler"
                                     desc="Detaylı İstatistikler" />
