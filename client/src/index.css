@@ -15,7 +15,7 @@ body {
 }
 
 .bg-gradient2 {
-  background-image: linear-gradient(to right, #4096FF, #fdfbfb);
+  background-image: linear-gradient(to right, #fdfbfb, #4096FF);
 }
 
 .chart-container {
