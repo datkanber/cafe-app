@@ -51,11 +51,21 @@ const Register = () => {
                         <Form.Item
                             label="Parola Tekrar"
                             name="passwordAgain"
+                            dependencies={["password"]}
                             rules={[
                                 {
                                     required: true,
                                     message: "Parola Tekrar Alanı Boş Bırakılamaz!",
                                 },
+                                ({ getFieldValue }) => ({
+                                    validator(_, value) {
+                                        if (!value || getFieldValue("password") === value) {
+                                            return Promise.resolve();
+                                        }
+                                        return Promise.reject(new Error(
+                                            "Şifreler aynı olmalıdır"));
+                                    },
+                                }),
                             ]}
                         >
                             <Input.Password />
