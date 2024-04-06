@@ -42,7 +42,7 @@ const CustomerPage = () => {
         <>
             <Header />
             <div
-                className="px-6 pt-5 cursor-pointer transition-all 
+                className="px-6 pt-2 cursor-pointer transition-all 
                 select-none">
                 <h1 className="text-4xl font-bold text-center mb-4 pb-10">Müşteriler</h1>
                 <Table

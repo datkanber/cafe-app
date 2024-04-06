@@ -181,7 +181,7 @@ const PrintBill = ({ isModalOpen, setIsModalOpen }) => {
                 </div>
             </section>
             <div className="flex justify-end mt-4">
-                <Button type="primary" size="large">
+                <Button type="primary" size="large" className='custom-button'>
                     Yazdır
                 </Button>
             </div>

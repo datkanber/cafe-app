@@ -99,7 +99,7 @@ const CreateBill = ({ isModalOpen, setIsModalOpen }) => {
                     </div>
                     <div className="flex justify-end">
                         <Button
-                            className="mt-4"
+                            className="mt-4 w-full custom-button"
                             type="primary"
                             size="large"
                             onClick={() => setIsModalOpen(true)}

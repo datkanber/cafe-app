@@ -73,10 +73,10 @@ const Register = () => {
                         <Form.Item>
                             <Button type="primary"
                                 htmlType="submit"
-                                className="w-full font-medium"
-                                size="Large"
+                                className="w-full font-medium custom-button"
+                                size="large"
                             >
-                                Kaydol
+                                Register
                             </Button>
                         </Form.Item>
                     </Form>

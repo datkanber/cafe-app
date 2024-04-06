@@ -45,7 +45,7 @@ const CartPage = () => {
         <>
             <Header />
             <div
-                className="px-6 pt-5 cursor-pointer transition-all 
+                className="px-6 pt-2 cursor-pointer transition-all 
                 select-none">
                 <h1 className="text-4xl font-bold text-center mb-4 pb-10">Sepet</h1>
                 <Table
@@ -72,7 +72,7 @@ const CartPage = () => {
                             <b>549.00TL</b>
                         </div>
                         <Button
-                            className="w-full mt-4"
+                            className="w-full mt-4 custom-button"
                             type="primary"
                             size="large"
                             onClick={() => setIsModalOpen(true)}

@@ -11,11 +11,7 @@ body {
 }
 
 .bg-gradient {
-  background-image: linear-gradient(to right, #fdfbfb, #4096FF);
-}
-
-.bg-gradient2 {
-  background-image: linear-gradient(to right, #fdfbfb, #4096FF);
+  background-image: linear-gradient(to right, #fdfbfb, #4096ff);
 }
 
 .chart-container {
@@ -24,28 +20,26 @@ body {
 }
 
 .ant-btn-primary {
-  background-image: linear-gradient(to right, #4096FF, #4096FF);
+  background-image: linear-gradient(to right, #4096ff, #4096ff);
   border-radius: 8px; /* Butonun kenar yuvarlaklığı ile uyumlu olması için */
   display: inline-block; /* Butonun boyutunu sınırlamak için */
 }
 .custom-button {
-  background-image: linear-gradient(to right, #1c3a60, #4096FF);
-  border-radius: 8px; /* Butonun kenar yuvarlaklığı ile uyumlu olması için */
-  display: inline-block; /* Butonun boyutunu sınırlamak için */
-}
-
-.custom-button:hover {
-  background-image: linear-gradient(to right, #4096FF, #4CAF50);
+  @apply flex items-center justify-center text-white cursor-pointer transition duration-300 text-center
+    rounded-lg bg-gradient-to-r from-blue-800 to-blue-600
+     hover:from-blue-600 hover:to-blue-400 min-w-[145px];
 }
 
 .custom-danger-button {
-  background-image: linear-gradient(to right, #8B0000, #E23E57);
-  border-radius: 8px; /* Butonun kenar yuvarlaklığı ile uyumlu olması için */
-  display: inline-block; /* Butonun boyutunu sınırlamak için */
+  @apply  flex items-center justify-center text-white cursor-pointer transition duration-300 text-center
+    rounded-lg bg-gradient-to-r from-red-600 to-red-700
+     hover:from-red-700 hover:opacity-90 hover:to-red-600 min-w-[145px];
 }
 
-.custom-danger-button:hover {
-  background-image: linear-gradient(to right, #E23E57, #FF6347); /* Hover durumu için daha açık kırmızı tonlarında gradient */
+.custom-button-success {
+  @apply flex items-center justify-center text-white cursor-pointer transition duration-300 text-center
+    rounded-lg bg-gradient-to-r from-green-600 to-green-700
+     hover:from-green-700 hover:opacity-90 hover:to-green-600 min-w-[145px];
 }
 
 @media (min-width: 768px) {

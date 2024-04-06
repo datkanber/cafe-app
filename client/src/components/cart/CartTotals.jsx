@@ -9,7 +9,7 @@ const CartTotals = () => {
     return (
         <div className='cart h-full max-h-[calc(100vh_-_88px)] flex flex-col cursor-pointer transition-all 
         select-none'>
-            <h2 className="text-center py-4 text-white font-bold tracking-wide transition duration-300 rounded-b-full bg-gradient-to-r from-blue-800 to-blue-600 hover:from-blue-600 hover:to-blue-400">
+            <h2 className="text-center py-4 text-white font-bold tracking-wide transition duration-300 rounded-b-full bg-gradient-to-r bg-sky-700">
                 Sepetteki Ürünler
             </h2>
             <ul className='cart-items px-2 flex-col gap-y-3 py-2 overflow-y-auto'>
@@ -115,10 +115,10 @@ const CartTotals = () => {
                     </div>
                 </div>
                 <div className="py-4 px-2">
-                    <Button type="primary" size="large" className="w-full custom-button custom-button:hover">
+                    <Button type="primary" size="large" className="w-full custom-button">
                         Sipariş Oluştur</Button>
-                    <Button type="primary" size="large" className="w-full custom-danger-button
-                    mt-2 flex items-center justify-center custom-danger-button:hover" icon={<ClearOutlined />}
+                    <Button type="danger" size="large" className="w-full custom-danger-button
+                    mt-2 flex items-center justify-center" icon={<ClearOutlined />}
                         >
                         Temizle</Button>
                 </div>

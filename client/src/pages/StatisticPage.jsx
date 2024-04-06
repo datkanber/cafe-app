@@ -37,7 +37,7 @@ const StatisticPage = () => {
     return (
         <>
             <Header />
-            <div className="px-6 md:pb-0 pb-36 pt-5 cursor-pointer transition-all 
+            <div className="px-11 md:pb-0 pb-36 pt-2 cursor-pointer transition-all 
         select-none">
                 <h1 className="text-4xl font-bold text-center mb-4">İstatistiklerim</h1>
                 <div className="statistic-section">
