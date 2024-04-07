@@ -10,8 +10,12 @@ import {
 import { Input, Badge } from 'antd';
 import * as React from "react";
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
+
+
 
 const Header = () => {
+    const cart = useSelector((state) => state.cart);
     return (
         <div className='border-b mb-6 shadow-lg cursor-pointer transition-all 
         select-none'>
@@ -37,7 +41,7 @@ const Header = () => {
                             Ana Sayfa
                         </span>
                     </Link>
-                    <Badge count={5} offset={[0, 0]} className='md:flex hidden'>
+                    <Badge count={cart.cartItems.length} offset={[0, 0]} className='md:flex hidden'>
                         <Link
                             to={"/cart"}
                             className='menu-link flex flex-col hover:text-[#40a9ff] trasition-all'

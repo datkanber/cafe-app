@@ -56,7 +56,7 @@ const BillPage = () => {
                 <div
                     className="cart-total flex justify-end mt-4">
                     <Card
-                        className="w-72">
+                        className="w-72 h-px">
                         <Button
                             className="w-full mt-4 custom-button"
                             type="primary"
