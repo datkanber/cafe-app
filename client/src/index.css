@@ -24,6 +24,25 @@ body {
   border-radius: 8px; /* Butonun kenar yuvarlaklığı ile uyumlu olması için */
   display: inline-block; /* Butonun boyutunu sınırlamak için */
 }
+
+.category-item {
+  @apply px-2 py-3 flex items-center justify-center text-white cursor-pointer transition duration-300 text-center
+    rounded-lg bg-gradient-to-r from-blue-800 to-blue-600
+     hover:from-blue-600 hover:to-blue-400 min-w-[145px];
+}
+
+.category-item2 {
+    @apply px-2 py-3 flex items-center justify-center text-white cursor-pointer transition duration-300 text-center
+      rounded-lg bg-gradient-to-r from-green-600 to-green-700
+       hover:from-green-700 hover:opacity-90 hover:to-green-600 min-w-[145px];
+  }
+
+.category-item3 {
+    @apply px-2 py-3 flex items-center justify-center text-white cursor-pointer transition duration-300 text-center
+      rounded-lg bg-gradient-to-r from-orange-600 to-orange-700
+       hover:from-orange-700 hover:opacity-90 hover:to-orange-600 min-w-[145px];
+  }
+
 .custom-button {
   @apply flex items-center justify-center text-white cursor-pointer transition duration-300 text-center
     rounded-lg bg-gradient-to-r from-blue-800 to-blue-600
