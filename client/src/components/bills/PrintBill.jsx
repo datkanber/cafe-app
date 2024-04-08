@@ -1,178 +1,231 @@
-import { Modal, Button } from 'antd';
+import { Button, Modal } from "antd";
+import { useRef } from "react";
+import { useReactToPrint } from "react-to-print";
+const PrintBill = ({ isModalOpen, setIsModalOpen, customer }) => {
+    const componentRef = useRef();
+    const handlePrint = useReactToPrint({
+        content: () => componentRef.current,
+    });
 
-const PrintBill = ({ isModalOpen, setIsModalOpen }) => {
     return (
-        <Modal className='cursor-pointer transition-all 
-        select-none'
+        <Modal
             title="Fatura Yazdır"
             open={isModalOpen}
             footer={false}
             onCancel={() => setIsModalOpen(false)}
             width={800}
         >
-            <section className='py-20 bg-slate-300'>
-                <div className='max-w-5xl mx-auto bg-white px-6'>
-                    <article className='overflow-hidden'>
+            <section className="py-20 bg-black" ref={componentRef}>
+                <div className="max-w-5xl mx-auto bg-white px-6">
+                    <article className="overflow-hidden">
                         <div className="logo my-6">
-                            <img src="https://www.pcis.com.tr/data/_images/logo2.png" alt="logo" />
+                            <h2 className="text-4xl font-bold text-slate-700">LOGO</h2>
                         </div>
                         <div className="bill-details">
-                            <div className='grid sm:grid-cols-4 grid-cols-3 gap-12'>
-                                <div className='text-md text-slate-500'>
-                                    <p className='font-bold text-slate-700'>Fatura Detayı:</p>
-                                    PCIS
-                                    <p>Street 123</p>
-                                    <p>Kartal</p>
-                                    <p>Evreka Sit.</p>
+                            <div className="grid sm:grid-cols-4 grid-cols-3 gap-12">
+                                <div className="text-md text-slate-500">
+                                    <p className="font-bold text-slate-700">Fatura Detayı:</p>
+                                    <p className="text-green-600">{customer?.customerName}</p>
+                                    <p> Fake Street 123</p>
+                                    <p> San Javier </p>
+                                    <p> CA 1234</p>
                                 </div>
-                                <div className='text-md text-slate-500'>
-                                    <p className='font-bold text-slate-700'>Fatura:</p>
-                                    Bilgi İşlem ve Danışmanlık Hiz. Ltd. Şti.
-                                    <p>Street 123</p>
-                                    <p>Kartal</p>
-                                    <p>CA 0000</p>
+                                <div className="text-md text-slate-500">
+                                    <p className="font-bold text-slate-700">Fatura:</p>
+                                    The Boring Company
+                                    <p> Tesla Street 007</p>
+                                    <p> Frisco </p>
+                                    <p> CA 0000</p>
                                 </div>
-                                <div className='text-md text-slate-500'>
+                                <div className="text-md text-slate-500">
                                     <div>
-                                        <p className='font-bold text-slate-700'>Fatura Numarası:</p>
-                                        00034
+                                        <p className="font-bold text-slate-700">Fatura numarası:</p>
+                                        <p>000{Math.floor(Math.random() * 100)}</p>
                                     </div>
                                     <div>
-                                        <p className='font-bold text-slate-700 mt-2'>Veriliş Tarihi:</p>
-                                        <p>2024-03-26</p>
+                                        <p className="font-bold text-slate-700 mt-2">
+                                            Veriliş Tarihi:
+                                        </p>
+                                        <p>{customer?.createdAt.substring(0, 10)}</p>
                                     </div>
                                 </div>
-                                <div className='text-md text-slate-500 sm:block hidden'>
+                                <div className="text-md text-slate-500 sm:block hidden">
                                     <div>
-                                        <p className='font-bold text-slate-700'>Şartlar:</p>
-                                        10 Gün
+                                        <p className="font-bold text-slate-700">Şartlar:</p>
+                                        <p>10 gün</p>
                                     </div>
                                     <div>
-                                        <p className='font-bold text-slate-700'>Vade</p>
-                                        <p>2024-11-26</p>
+                                        <p className="font-bold text-slate-700 mt-2">Vade:</p>
+                                        <p>2023-11-21</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div className='bill-table-area mt-8'>
-                            <table className='min-w-full divide-y divide-slate-500
-                         overflow-hidden'>
+                        <div className="bill-table-area mt-8">
+                            <table className="min-w-full divide-y divide-slate-500 overflow-hidden">
                                 <thead>
-                                    <tr>
-                                        <th scope="col" className='py-3.5 pl-4 pr-3 sm:pl-6
-                                    text-left text-sm font-normal text-slate-700
-                                    md:pl-0 sm:table-cell hidden'>Görsel</th>
-                                        <th scope="col" className='w-full py-3.5 pr-3
-                                    text-left text-sm font-normal text-slate-700
-                                    md:pl-0 sm:pl-6 sm:table-cell hidden'>Ürün</th>
-                                        <th colSpan={4} scope="col" className='w-full py-3.5 pr-3
-                                    text-left text-sm font-normal sm:hidden text-slate-700
-                                    md:pl-0 sm:pl-6'>Ürün</th>
-                                        <th scope="col" className='py-3.5 pl-4 pr-3
-                                    text-left text-sm font-normal text-slate-700
-                                     sm:pl-6 md:pl-0 sm:table-cell hidden'>Fiyat</th>
-                                        <th scope="col" className='py-3.5 pl-4 pr-3 sm:
-                                     text-sm font-normal text-slate-700
-                                     sm:pl-6 md:pl-0 sm:table-cell hidden'>Adet</th>
-                                        <th scope="col" className='py-3.5 pl-4 
-                                    text-end text-sm font-normal text-slate-700
-                                     md:pl-0'>Toplam</th>
+                                    <tr className="border-b border-slate-200">
+                                        <th
+                                            scope="col"
+                                            className="py-3.5 text-left text-sm font-normal text-slate-700 md:pl-0 sm:table-cell hidden"
+                                        >
+                                            Görsel
+                                        </th>
+                                        <th
+                                            scope="col"
+                                            className="py-3.5 text-left text-sm font-normal text-slate-700 md:pl-0 sm:table-cell hidden"
+                                        >
+                                            {" "}
+                                            Başlık
+                                        </th>
+                                        <th
+                                            colSpan={4}
+                                            scope="col"
+                                            className="py-3.5 text-left text-sm font-normal text-slate-700 md:pl-0 sm:hidden"
+                                        >
+                                            {" "}
+                                            Başlık
+                                        </th>
+                                        <th
+                                            scope="col"
+                                            className="py-3.5 text-center text-sm font-normal text-slate-700 md:pl-0 sm:table-cell hidden"
+                                        >
+                                            Fiyat
+                                        </th>
+                                        <th
+                                            scope="col"
+                                            className="py-3.5 text-center text-sm font-normal text-slate-700 md:pl-0 sm:table-cell hidden"
+                                        >
+                                            Adet
+                                        </th>
+                                        <th
+                                            scope="col"
+                                            className="py-3.5 text-end text-sm font-normal text-slate-700 md:pl-0"
+                                        >
+                                            Toplam
+                                        </th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr className='border-b border-t border-slate-200'>
-                                        <td className='py-4 sm:table-cell hidden'>
-                                            <img src="https://cdn.thewirecutter.com/wp-content/media/2023/06/bestlaptops-2048px-9765.jpg" alt="" className='w-14 h-12 object-scale-down' />
-                                        </td>
-                                        <td className='py-4 sm:table-cell hidden'>
-                                            <div className='flex flex-col'>
-                                                <span className='font-medium'>Dell Workstation 7780 CTO</span>
-                                                <span className='text-xs sm:hidden inline-block'>Birim Fiyat 61.00₺</span>
-                                            </div>
-                                        </td>
-                                        <td className='py-4 sm:hidden' colSpan={4}>
-                                            <div className='flex flex-col'>
-                                                <span className='font-medium'>Dell Workstation 7780 CTO</span>
-                                                <span className='text-xs sm:hidden inline-block'>Birim Fiyat 61.00₺</span>
-                                            </div>
-                                        </td>
-                                        <td className='py-4 text-left sm:table-cell hidden'>
-                                            <span>61.00₺</span>
-                                        </td>
-                                        <td className='py-4 pr-1 text-center sm: sm:table-cell hidden'>
-                                            <span>2</span>
-                                        </td>
-                                        <td className='py-4 text-end'>
-                                            <span>61.00₺</span>
-                                        </td>
-                                    </tr>
+                                    {customer?.cartItems.map((item) => (
+                                        <tr className="border-b border-slate-200">
+                                            <td className="py-4 sm:table-cell hidden">
+                                                <img
+                                                    src={item.img}
+                                                    alt=""
+                                                    className="w-12 h-12 object-cover"
+                                                />
+                                            </td>
+                                            <td className="py-4 sm:table-cell hidden">
+                                                <div className="flex flex-col">
+                                                    <span className="font-medium">{item.title}</span>
+                                                    <span className="sm:hidden inline-block text-xs">
+                                                        Birim Fiyatı {item.price}₺
+                                                    </span>
+                                                </div>
+                                            </td>
+                                            <td className="py-4 sm:hidden" colSpan={4}>
+                                                <div className="flex flex-col">
+                                                    <span className="font-medium">{item.title}</span>
+                                                    <span className="sm:hidden inline-block text-xs">
+                                                        Birim Fiyatı {item.price}₺
+                                                    </span>
+                                                </div>
+                                            </td>
+                                            <td className="py-4 text-center sm:table-cell hidden">
+                                                <span>{item.price.toFixed(2)}₺</span>
+                                            </td>
+                                            <td className="py-4 sm:text-center text-right sm:table-cell hidden">
+                                                <span>{item.quantity}</span>
+                                            </td>
+                                            <td className="py-4 text-end">
+                                                <span>{(item.price * item.quantity).toFixed(2)}₺</span>
+                                            </td>
+                                        </tr>
+                                    ))}
                                 </tbody>
                                 <tfoot>
                                     <tr>
-                                        <th className='text-right pt-6 pr-3 sm:table-cell hidden' colSpan="4" scope='row'>
-                                            <span className='font-normal text-slate-700'>
+                                        <th
+                                            className="text-right pt-4 sm:table-cell hidden"
+                                            colSpan="4"
+                                            scope="row"
+                                        >
+                                            <span className="font-normal text-slate-700">
                                                 Ara Toplam
                                             </span>
                                         </th>
-                                        <th className='text-left pt-6 pr-3 sm:hidden' colSpan="4" scope='row'>
-                                            <p className='font-normal text-slate-700'>
-                                                Ara Toplam
-                                            </p>
+                                        <th
+                                            className="text-left pt-4 sm:hidden"
+                                            scope="row"
+                                            colSpan="4"
+                                        >
+                                            <p className="font-normal text-slate-700">Ara Toplam</p>
                                         </th>
-                                        <th className='text-right pt-6' scope='row'>
-                                            <span className='font-normal text-slate-700'>
-                                                61.00₺
+                                        <th className="text-right pt-4" scope="row">
+                                            <span className="font-normal text-slate-700">
+                                                {customer?.subTotal}₺
                                             </span>
                                         </th>
                                     </tr>
                                     <tr>
-                                        <th className='text-right pt-6 pr-3 sm:table-cell hidden' colSpan="4" scope='row'>
-                                            <span className='font-normal text-slate-700'>
-                                                KDV
-                                            </span>
+                                        <th
+                                            className="text-right pt-4 sm:table-cell hidden"
+                                            colSpan="4"
+                                            scope="row"
+                                        >
+                                            <span className="font-normal text-slate-700">KDV</span>
                                         </th>
-                                        <th className='text-left pt-6 pr-3 sm:hidden' colSpan="4" scope='row'>
-                                            <p className='font-normal text-slate-700'>
-                                                KDV
-                                            </p>
+                                        <th
+                                            className="text-left pt-4 sm:hidden"
+                                            scope="row"
+                                            colSpan="4"
+                                        >
+                                            <p className="font-normal text-slate-700">KDV</p>
                                         </th>
-                                        <th className='text-right pt-6' scope='row'>
-                                            <span className='font-normal text-red-600'>
-                                                +4.88₺
+                                        <th className="text-right pt-4" scope="row">
+                                            <span className="font-normal text-red-600">
+                                                +{customer?.tax}₺
                                             </span>
                                         </th>
                                     </tr>
                                     <tr>
-                                        <th className='text-right pt-6 pr-3 sm:table-cell hidden' colSpan="4" scope='row'>
-                                            <span className='font-normal text-slate-700'>
+                                        <th
+                                            className="text-right pt-4 sm:table-cell hidden"
+                                            colSpan="4"
+                                            scope="row"
+                                        >
+                                            <span className="font-normal text-slate-700">
                                                 Genel Toplam
                                             </span>
                                         </th>
-                                        <th className='text-left pt-6 pr-3 sm:hidden' colSpan="4" scope='row'>
-                                            <p className='font-normal text-slate-700'>
-                                                Genel Toplam
-                                            </p>
+                                        <th
+                                            className="text-left pt-4 sm:hidden"
+                                            scope="row"
+                                            colSpan="4"
+                                        >
+                                            <p className="font-normal text-slate-700">Genel Toplam</p>
                                         </th>
-                                        <th className='text-right pt-6' scope='row'>
-                                            <span className='font-normal text-slate-700'>
-                                                65.88₺
+                                        <th className="text-right pt-4" scope="row">
+                                            <span className="font-normal text-slate-700">
+                                                {customer?.totalAmount}₺
                                             </span>
                                         </th>
                                     </tr>
                                 </tfoot>
                             </table>
-                            <div className='py-9'>
-                                <div className='pt-2 border-b border-t border-slate-200'>
-                                    <p className='text-sm font-light text-slate-700'>
+                            <div className="py-9">
+                                <div className="border-t pt-9 border-slate-200">
+                                    <p className="text-sm font-light text-slate-700">
                                         Ödeme koşulları 14 gündür. Paketlenmemiş Borçların Geç
                                         Ödenmesi Yasası 0000'e göre, serbest çalışanların bu süreden
                                         sonra borçların ödenmemesi durumunda 00.00 gecikme ücreti
                                         talep etme hakkına sahip olduklarını ve bu noktada bu ücrete
                                         ek olarak yeni bir fatura sunulacağını lütfen unutmayın.
-                                        Revize faturanın 15 gün içinde ödenmemesi durumunda, vadesi
-                                        geçmiş hesaba ek faiz ve %8 yasal oran artı %0,5 banka tabanı
-                                        olmak üzere toplamda %88.5 uygulanacaktır. Taraflar Kanun hükümleri
-                                        dışında sözleşme yapamazlar.
+                                        Revize faturanın 14 gün içinde ödenmemesi durumunda, vadesi
+                                        geçmiş hesaba ek faiz ve %8 yasal oran artı %0,5 Bank of
+                                        England tabanı olmak üzere toplam %8,5 uygulanacaktır.
+                                        Taraflar Kanun hükümleri dışında sözleşme yapamazlar.
                                     </p>
                                 </div>
                             </div>
@@ -181,11 +234,11 @@ const PrintBill = ({ isModalOpen, setIsModalOpen }) => {
                 </div>
             </section>
             <div className="flex justify-end mt-4">
-                <Button type="primary" size="large" className='custom-button'>
+                <Button type="primary" size="large" onClick={handlePrint}>
                     Yazdır
                 </Button>
             </div>
-        </Modal >
+        </Modal>
     );
 };
 

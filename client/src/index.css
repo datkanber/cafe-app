@@ -6,7 +6,7 @@
 
 body {
   margin: 0;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Electrolize", sans-serif;
   @apply bg-zinc-50;
 }
 
@@ -25,14 +25,20 @@ body {
   display: inline-block; /* Butonun boyutunu sınırlamak için */
 }
 
+.menu-link .anticon {
+  display: flex;
+  justify-content: center;
+}
+
 .category-item {
   @apply px-1 py-7 flex items-center justify-center text-white cursor-pointer rounded-lg min-w-[145px];
-  background: linear-gradient(135deg, #91887B, #91887B);
+  background: linear-gradient(135deg, #20272B, #5AC3AB);
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12), 0 9px 26px rgba(0, 0, 0, 0.16);
   text-shadow: 0 2px 3px rgba(0, 0, 0, 0.12);
   position: relative;
   overflow: hidden;
-  transition: transform 0.7s ease-in-out, background 0.7s ease-in-out, box-shadow 0.7s ease-in-out;
+  transition: transform 0.7s ease-in-out, background 0.7s ease-in-out,
+    box-shadow 0.7s ease-in-out;
 
   &:before {
     content: "";
@@ -41,14 +47,18 @@ body {
     left: 50%;
     width: 230%;
     height: 230%;
-    background-image: radial-gradient(circle at center, rgba(255, 255, 255, 0.35) 0%, transparent 65%);
+    background-image: radial-gradient(
+      circle at center,
+      rgba(255, 255, 255, 0.35) 0%,
+      transparent 65%
+    );
     transition: transform 0.7s ease-in-out, opacity 0.7s ease-in-out;
     transform: translate(-50%, -50%) rotate(0deg);
     opacity: 0;
   }
 
   &:hover {
-    background: linear-gradient(135deg, #B0A59F, #91887B);
+    background: linear-gradient(135deg, #b0a59f, #91887b);
     box-shadow: 0 14px 30px rgba(0, 0, 0, 0.18), 0 18px 36px rgba(0, 0, 0, 0.22);
     transform: translateY(-6px) scale(1.09);
 
@@ -58,7 +68,6 @@ body {
     }
   }
 }
-
 
 .plus_icon {
   @apply px-0 py-1 flex items-center justify-center text-white cursor-pointer transition duration-300 text-center
