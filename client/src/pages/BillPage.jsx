@@ -130,11 +130,7 @@ const BillPage = () => {
     useEffect(() => {
         const getBills = async () => {
             try {
-<<<<<<< HEAD
                 const res = await fetch("http://localhost:5000/api/bills/get-all");
-=======
-                const res = await fetch(process.env.REACT_APP_SERVER_URL + "/api/bills/get-all");
->>>>>>> 59eff019bed20b979b32045dbf90f4b8b14d6642
                 const data = await res.json();
                 setBillItems(data);
             } catch (error) {
