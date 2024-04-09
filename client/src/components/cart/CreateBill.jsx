@@ -32,7 +32,7 @@ const CreateBill = ({ isModalOpen, setIsModalOpen }) => {
             if (res.status === 200) {
                 message.success("Fatura başarıyla oluştu");
                 dispatch(reset());
-                navigate("bills");
+                navigate("/bills");
             }
         } catch (error) {
             message.danger("Fatura oluşmadı");

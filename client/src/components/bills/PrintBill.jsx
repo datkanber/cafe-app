@@ -19,19 +19,19 @@ const PrintBill = ({ isModalOpen, setIsModalOpen, customer }) => {
                 <div className="max-w-5xl mx-auto bg-white px-6">
                     <article className="overflow-hidden">
                         <div className="logo my-6">
-                            <h2 className="text-4xl font-bold text-slate-700">LOGO</h2>
+                            <img src="https://www.pcis.com.tr/data/_images/logo2.png" alt="logo" />
                         </div>
                         <div className="bill-details">
                             <div className="grid sm:grid-cols-4 grid-cols-3 gap-12">
                                 <div className="text-md text-slate-500">
-                                    <p className="font-bold text-slate-700">Fatura Detayı:</p>
+                                    <p className="text-slate-700">Fatura Detayı:</p>
                                     <p className="text-green-600">{customer?.customerName}</p>
                                     <p> Fake Street 123</p>
                                     <p> San Javier </p>
                                     <p> CA 1234</p>
                                 </div>
                                 <div className="text-md text-slate-500">
-                                    <p className="font-bold text-slate-700">Fatura:</p>
+                                    <p className="text-slate-700">Fatura:</p>
                                     The Boring Company
                                     <p> Tesla Street 007</p>
                                     <p> Frisco </p>
@@ -39,11 +39,11 @@ const PrintBill = ({ isModalOpen, setIsModalOpen, customer }) => {
                                 </div>
                                 <div className="text-md text-slate-500">
                                     <div>
-                                        <p className="font-bold text-slate-700">Fatura numarası:</p>
+                                        <p className="text-slate-700">Fatura numarası:</p>
                                         <p>000{Math.floor(Math.random() * 100)}</p>
                                     </div>
                                     <div>
-                                        <p className="font-bold text-slate-700 mt-2">
+                                        <p className="text-slate-700 mt-2">
                                             Veriliş Tarihi:
                                         </p>
                                         <p>{customer?.createdAt.substring(0, 10)}</p>
@@ -51,11 +51,11 @@ const PrintBill = ({ isModalOpen, setIsModalOpen, customer }) => {
                                 </div>
                                 <div className="text-md text-slate-500 sm:block hidden">
                                     <div>
-                                        <p className="font-bold text-slate-700">Şartlar:</p>
+                                        <p className="text-slate-700">Şartlar:</p>
                                         <p>10 gün</p>
                                     </div>
                                     <div>
-                                        <p className="font-bold text-slate-700 mt-2">Vade:</p>
+                                        <p className="text-slate-700 mt-2">Vade:</p>
                                         <p>2023-11-21</p>
                                     </div>
                                 </div>
