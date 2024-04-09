@@ -1,13 +1,18 @@
 import React from 'react';
+<<<<<<< HEAD
 import { Form, Modal, Input, Select, Button, Card, message } from 'antd';
 import { useSelector, useDispatch } from "react-redux";
 import { reset } from "../../redux/cartSlice";
 import { useNavigate } from "react-router-dom";
+=======
+import { Form, Modal, Input, Select, Button, Card } from 'antd';
+>>>>>>> 59eff019bed20b979b32045dbf90f4b8b14d6642
 
 const countryCodes = [
     { code: '+90', country: 'Turkey' },
     { code: '+1', country: 'United States' },
     { code: '+44', country: 'United Kingdom' },
+<<<<<<< HEAD
 ];
 
 const CreateBill = ({ isModalOpen, setIsModalOpen }) => {
@@ -38,6 +43,16 @@ const CreateBill = ({ isModalOpen, setIsModalOpen }) => {
             message.danger("Fatura oluşmadı");
             console.log(error);
         }
+=======
+    // Add more country codes as needed
+];
+
+const CreateBill = ({ isModalOpen, setIsModalOpen }) => {
+    const [form] = Form.useForm(); // Form.useForm hook'undan form nesnesi oluşturuldu
+
+    const onFinish = (values) => {
+        console.log('Received values of form: ', values);
+>>>>>>> 59eff019bed20b979b32045dbf90f4b8b14d6642
     };
 
     return (
@@ -63,7 +78,11 @@ const CreateBill = ({ isModalOpen, setIsModalOpen }) => {
                 </Form.Item>
                 <Form.Item
                     label="Telefon Numarası"
+<<<<<<< HEAD
                     name={'customerPhoneNumber'}
+=======
+                    name={'phoneNumber'}
+>>>>>>> 59eff019bed20b979b32045dbf90f4b8b14d6642
                     rules={[
                         {
                             required: true,
@@ -93,7 +112,11 @@ const CreateBill = ({ isModalOpen, setIsModalOpen }) => {
                 </Form.Item>
                 <Form.Item
                     label="Ödeme Yöntemi"
+<<<<<<< HEAD
                     name={'paymentMode'}
+=======
+                    name={'billMethod'}
+>>>>>>> 59eff019bed20b979b32045dbf90f4b8b14d6642
                     rules={[
                         {
                             required: true,
@@ -129,7 +152,10 @@ const CreateBill = ({ isModalOpen, setIsModalOpen }) => {
                             size="large"
                             onClick={() => setIsModalOpen(true)}
                             htmlType="submit"
+<<<<<<< HEAD
                             disabled={cart.cartItems.length === 0}
+=======
+>>>>>>> 59eff019bed20b979b32045dbf90f4b8b14d6642
                         >Sipariş Oluştur</Button>
                     </div>
                 </Card>
