@@ -1,8 +1,32 @@
-import { Form, Input, Button, Carousel } from "antd";
+import { Button, Carousel, Form, Input, message } from "antd";
 import { Link } from "react-router-dom";
 import AuthCarousel from "../../components/auth/AuthCarousel";
+import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 
 const Register = () => {
+    const navigate = useNavigate();
+    const [loading, setLoading] = useState(false);
+
+    const onFinish = async (values) => {
+        setLoading(true);
+        try {
+            const res = await fetch("http://localhost:5000/api/auth/register", {
+                method: "POST",
+                body: JSON.stringify(values),
+                headers: { "Content-type": "application/json; charset=UTF-8" },
+            });
+            if (res.status === 200) {
+                message.success("Kayıt işlemi başarılı.");
+                navigate("/login");
+                setLoading(false);
+            }
+        } catch (error) {
+            message.error("Bir şeyler yanlış gitti.");
+            console.log(error);
+        }
+    };
+
     return (
         <div className='h-screen hover:shadow-lg cursor-pointer transition-all 
         select-none'>
@@ -11,7 +35,7 @@ const Register = () => {
                     <div className="logo  flex justify-center pb-11">
                         <img src="https://www.pcis.com.tr/data/_images/logo2.png" alt="logo" />
                     </div>
-                    <Form layout="vertical font-medium">
+                    <Form layout="vertical" onFinish={onFinish}>
                         <Form.Item
                             label="Kullanıcı Adı"
                             name="username"
@@ -75,6 +99,7 @@ const Register = () => {
                                 htmlType="submit"
                                 className="w-full font-medium custom-button"
                                 size="large"
+                                loading={loading}
                             >
                                 Register
                             </Button>
