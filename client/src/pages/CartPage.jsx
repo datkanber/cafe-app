@@ -171,7 +171,7 @@ const CartPage = () => {
                             icon={<PlusCircleOutlined />}
                             onClick={() => dispatch(increase(record))}
                         />
-                        <span className="font-bold w-6 inline-block text-center">
+                        <span className="font-bold w-6 inline-block text-center quantity">
                             {record.quantity}
                         </span>
                         <Button

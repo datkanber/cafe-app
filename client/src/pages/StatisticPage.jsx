@@ -1,33 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import Header from '../components/header/Header.jsx';
 import StatisticCard from '../components/statistics/StatisticCard.jsx';
-import { Tooltip, ResponsiveContainer, PieChart, Pie, Legend, Cell, Text } from 'recharts';
+import { Tooltip, ResponsiveContainer, BarChart, Bar, XAxis, YAxis, CartesianGrid, Legend } from 'recharts';
 import { Spin } from 'antd';
-
-const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', '#AF19FF'];
-
-// Custom label component
-const RADIAN = Math.PI / 180;
-const renderCustomizedLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, name, value }) => {
-    const radius = outerRadius + 10;
-    const x = cx + radius * Math.cos(-midAngle * RADIAN);
-    const y = cy + radius * Math.sin(-midAngle * RADIAN);
-    const label = `${name}: ${value}₺`;
-
-    // Only display label if there's enough space
-    if (radius * midAngle * RADIAN > label.length * 7) {
-        return (
-            <Text x={x} y={y} fill="#333" textAnchor={x > cx ? 'start' : 'end'} dominantBaseline="central">
-                {label}
-            </Text>
-        );
-    }
-    return null;
-};
 
 const StatisticPage = () => {
     const [data, setData] = useState([]);
     const [productSales, setProductSales] = useState([]);
+    const [topCustomers, setTopCustomers] = useState([]);
     const user = JSON.parse(localStorage.getItem('posUser')) || {};
 
     useEffect(() => {
@@ -36,8 +16,9 @@ const StatisticPage = () => {
             .then(json => {
                 setData(json);
                 const salesMap = {};
+                const customerSales = {};
                 json.forEach(bill => {
-                    // Make sure to use the correct property name: 'cartItems'
+                    // For product sales
                     (bill.cartItems || []).forEach(item => {
                         const { title, quantity, price } = item;
                         if (!salesMap[title]) {
@@ -46,14 +27,21 @@ const StatisticPage = () => {
                         salesMap[title].totalSales += quantity;
                         salesMap[title].totalPrice += price * quantity;
                     });
+
+                    // For top customers
+                    const name = bill.customerName;
+                    if (!customerSales[name]) {
+                        customerSales[name] = { name, totalAmount: 0 };
+                    }
+                    customerSales[name].totalAmount += bill.totalAmount;
                 });
                 setProductSales(Object.values(salesMap));
+                setTopCustomers(Object.values(customerSales).sort((a, b) => b.totalAmount - a.totalAmount).slice(0, 5)); // Top 5
             })
             .catch(error => {
                 console.log('fetch data failed', error);
             });
     }, []);
-
 
     const totalAmount = () => {
         return `${data.reduce((total, bill) => total + bill.totalAmount, 0).toFixed(2)}₺`;
@@ -76,27 +64,39 @@ const StatisticPage = () => {
                             <StatisticCard title="Toplam Ürün" amount={productSales.length} img="images/product.png" />
                         </div>
                         <div className="flex justify-between gap-10 lg:flex-row flex-col items-center">
+                            {/* Bar Chart for Product Sales */}
                             <div style={{ width: '100%', height: 300 }}>
                                 <ResponsiveContainer>
-                                    <PieChart>
-                                        <Pie
-                                            dataKey="totalPrice"
-                                            nameKey="name"
-                                            data={productSales}
-                                            cx="50%"
-                                            cy="50%"
-                                            outerRadius={100}
-                                            fill="#8884d8"
-                                            label={renderCustomizedLabel} // Use the custom label
-                                            labelLine={false}
-                                        >
-                                            {productSales.map((entry, index) => (
-                                                <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
-                                            ))}
-                                        </Pie>
+                                    <BarChart data={productSales} margin={{ top: 20, right: 30, left: 20, bottom: 5 }}>
+                                        <CartesianGrid strokeDasharray="3 3" />
+                                        <XAxis dataKey="name" />
+                                        <YAxis />
+                                        <Tooltip formatter={(value, name) => {
+                                            if (name === "Satılan Ürün Adedi") {
+                                                return `${value} adet`;
+                                            }
+                                            if (name === "Toplam Gelir") {
+                                                return `${value}₺`;
+                                            }
+                                            return value;
+                                        }} />
+                                        <Legend />
+                                        <Bar dataKey="totalSales" fill="#8884d8" name="Satılan Ürün Adedi" />
+                                        <Bar dataKey="totalPrice" fill="#82ca9d" name="Toplam Gelir" />
+                                    </BarChart>
+                                </ResponsiveContainer>
+                            </div>
+                            {/* Bar Chart for Top Customers */}
+                            <div style={{ width: '100%', height: 300 }}>
+                                <ResponsiveContainer>
+                                    <BarChart data={topCustomers} layout="vertical" margin={{ top: 20, right: 30, left: 20, bottom: 5 }}>
+                                        <CartesianGrid strokeDasharray="3 3" />
+                                        <XAxis type="number" />
+                                        <YAxis dataKey="name" type="category" />
                                         <Tooltip formatter={(value) => `${value}₺`} />
                                         <Legend />
-                                    </PieChart>
+                                        <Bar dataKey="totalAmount" fill="#413ea0" name="Toplam Fatura Tutarı" />
+                                    </BarChart>
                                 </ResponsiveContainer>
                             </div>
                         </div>

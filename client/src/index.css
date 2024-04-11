@@ -3,7 +3,6 @@
 @tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 
-
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
@@ -32,7 +31,7 @@ body {
 
 .category-item {
   @apply px-1 py-7 flex items-center justify-center text-white cursor-pointer rounded-lg min-w-[145px];
-  background: linear-gradient(135deg, #20272B, #5AC3AB);
+  background: linear-gradient(135deg, #20272b, #5ac3ab);
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12), 0 9px 26px rgba(0, 0, 0, 0.16);
   text-shadow: 0 2px 3px rgba(0, 0, 0, 0.12);
   position: relative;
@@ -67,6 +66,15 @@ body {
       opacity: 1;
     }
   }
+}
+
+.quantity {
+  min-width: 2em; /* Yeterli genişlik sağlamak için minimum genişlik */
+  display: inline-block; /* Elementi inline-block yapmak */
+  text-align: center; /* Metni ortalamak */
+  overflow: hidden; /* İçeriği sınırlamak */
+  white-space: nowrap; /* İçeriği aynı satırda tutmak */
+  text-overflow: ellipsis; /* İçerik taşarsa üç nokta koymak */
 }
 
 .plus_icon {
