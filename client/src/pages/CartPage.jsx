@@ -3,10 +3,9 @@ import { useRef, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import CreateBill from "../components/cart/CreateBill.jsx";
 import Header from "../components/header/Header.jsx";
-import { PlusCircleOutlined, MinusCircleOutlined } from "@ant-design/icons";
+import { PlusCircleOutlined, MinusCircleOutlined, SearchOutlined } from "@ant-design/icons";
 import { deleteCart, increase, decrease } from "../redux/cartSlice.js";
-import Highlighter from "react-highlight-words";
-import { SearchOutlined } from "@ant-design/icons";
+import replace from 'react-string-replace';
 
 const CartPage = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -116,19 +115,16 @@ const CartPage = () => {
         },
         render: (text) =>
             searchedColumn === dataIndex ? (
-                <Highlighter
-                    highlightStyle={{
-                        backgroundColor: "#ffc069",
-                        padding: 0,
-                    }}
-                    searchWords={[searchText]}
-                    autoEscape
-                    textToHighlight={text ? text.toString() : ""}
-                />
+                replace(text.toString(), new RegExp(searchText, 'gi'), (match, i) => (
+                    <span key={i} style={{ backgroundColor: "#ffc069", padding: 0 }}>
+                        {match}
+                    </span>
+                ))
             ) : (
                 text
             ),
     });
+
 
     const columns = [
         {

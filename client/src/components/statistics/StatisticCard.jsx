@@ -2,7 +2,7 @@ import React from 'react'
 
 const StatisticCard = ({title, amount, img}) => {
     return (
-        <div className="card-item p-2 rounded-lg bg-gradient-to-r from-blue-800 to-blue-600 hover:from-blue-600 hover:to-blue-400">
+        <div className="card-item p-2 rounded-lg bg-gradient-to-r category-item border-collapse">
             <div className="flex gap-x-3.5">
                 <div className="rounded-full bg-slate-300 w-16 h-16 p-3">
                     <img src={img} alt="" />

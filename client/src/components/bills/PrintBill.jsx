@@ -15,7 +15,8 @@ const PrintBill = ({ isModalOpen, setIsModalOpen, customer }) => {
             onCancel={() => setIsModalOpen(false)}
             width={800}
         >
-            <section className="py-20 bg-black" ref={componentRef}>
+            <section className="py-30 cursor-pointer transition-all 
+        select-none bg-black" ref={componentRef}>
                 <div className="max-w-5xl mx-auto bg-white px-6">
                     <article className="overflow-hidden">
                         <div className="logo my-6">

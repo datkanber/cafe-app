@@ -17,8 +17,7 @@ import { useSelector } from "react-redux";
 const Header = () => {
     const cart = useSelector((state) => state.cart);
     return (
-        <div className='border-b mb-6 shadow-lg cursor-pointer transition-all 
-        select-none'>
+        <div className='border-b mb-6 shadow-lg cursor-pointer transition-all select-none'>
             <header className='py-3 px-6 flex justify-between items-center gap-10'>
                 <div className="logo">
                     <img src="https://www.pcis.com.tr/data/_images/logo2.png" alt="logo" />
@@ -29,6 +28,8 @@ const Header = () => {
                         placeholder="Ürün ara"
                         prefix={<SearchOutlined />}
                         className='rounded-full max-w-[800px]'
+                        id="productSearch"
+                        name="productSearch"
                     />
                 </div>
                 <div className="menu-links flex justify-between items-center gap-9 md:static 

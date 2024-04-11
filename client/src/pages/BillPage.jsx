@@ -3,11 +3,11 @@ import { useEffect, useRef, useState } from "react";
 import PrintBill from "../components/bills/PrintBill.jsx";
 import Header from "../components/header/Header.jsx";
 import { SearchOutlined } from "@ant-design/icons";
-import Highlighter from "react-highlight-words";
+import replace from 'react-string-replace';
 
 const BillPage = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
-    const [billItems, setBillItems] = useState();
+    const [billItems, setBillItems] = useState([]);
     const [customer, setCustomer] = useState();
     const [searchText, setSearchText] = useState("");
     const [searchedColumn, setSearchedColumn] = useState("");
@@ -113,15 +113,11 @@ const BillPage = () => {
         },
         render: (text) =>
             searchedColumn === dataIndex ? (
-                <Highlighter
-                    highlightStyle={{
-                        backgroundColor: "#ffc069",
-                        padding: 0,
-                    }}
-                    searchWords={[searchText]}
-                    autoEscape
-                    textToHighlight={text ? text.toString() : ""}
-                />
+                replace(text.toString(), new RegExp(searchText, 'gi'), (match, i) => (
+                    <span key={i} style={{ backgroundColor: "#ffc069", padding: 0 }}>
+                        {match}
+                    </span>
+                ))
             ) : (
                 text
             ),
@@ -159,7 +155,7 @@ const BillPage = () => {
             dataIndex: "createdAt",
             key: "createdAt",
             render: (text) => {
-                return <span>{text.substring(0, 10)}</span>;
+                return <span className="cursor-pointer transition-all select-none">{text.substring(0, 10)}</span>;
             },
         },
         {
@@ -173,7 +169,7 @@ const BillPage = () => {
             dataIndex: "totalAmount",
             key: "totalAmount",
             render: (text) => {
-                return <span>{text}₺</span>;
+                return <span className="cursor-pointer transition-all select-none">{text}₺</span>;
             },
             sorter: (a, b) => a.totalAmount - b.totalAmount,
         },
@@ -185,7 +181,7 @@ const BillPage = () => {
                 return (
                     <Button
                         type="link"
-                        className="pl-0"
+                        className="pl-0 cursor-pointer transition-all select-none"
                         onClick={() => {
                             setIsModalOpen(true);
                             setCustomer(record);
@@ -201,7 +197,7 @@ const BillPage = () => {
     return (
         <>
             <Header />
-            <h1 className="text-4xl font-bold text-center mb-4">Faturalar</h1>
+            <h1 className="text-4xl font-bold text-center mb-4 cursor-pointer transition-all select-none">Faturalar</h1>
             {billItems ? (
                 <div className="px-6">
                     <Table
@@ -219,7 +215,7 @@ const BillPage = () => {
             ) : (
                 <Spin
                     size="large"
-                    className="absolute top-1/2 h-screen w-screen flex justify-center"
+                    className="absolute top-1/2 h-screen w-screen flex justify-center cursor-pointer transition-all select-none"
                 />
             )}
             <PrintBill
