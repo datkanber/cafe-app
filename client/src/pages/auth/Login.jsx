@@ -10,7 +10,7 @@ const Login = () => {
     const onFinish = async (values) => {
         setLoading(true);
         try {
-            const res = await fetch("http://localhost:5000/api/auth/login", {
+            const res = await fetch("http://localhost:5001/api/auth/login", {
                 method: "POST",
                 body: JSON.stringify(values),
                 headers: { "Content-type": "application/json; charset=UTF-8" },
@@ -44,7 +44,7 @@ const Login = () => {
     return (
         <div className='h-screen hover:shadow-lg cursor-pointer transition-all 
         select-none'>
-            <div className='flex justify-between h-full'>
+            <div className='flex justify-between h-full font-bold'>
                 <div className='xl:px-20 px-10 flex flex-col h-full w-full justify-center relative'>
                     <div className="logo  flex justify-center pb-11">
                         <img src="https://www.pcis.com.tr/data/_images/logo2.png" alt="logo" />

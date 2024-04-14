@@ -18,7 +18,7 @@ const CreateBill = ({ isModalOpen, setIsModalOpen }) => {
 
     const onFinish = async (values) => {
         try {
-            const res = await fetch("http://localhost:5000/api/bills/add-bill", {
+            const res = await fetch("http://localhost:5001/api/bills/add-bill", {
                 method: "POST",
                 body: JSON.stringify({
                     ...values,

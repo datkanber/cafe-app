@@ -111,10 +111,10 @@ const BillPage = () => {
                 setTimeout(() => searchInput.current?.select(), 100);
             }
         },
-        render: (text) =>
+        render: (text, record) =>
             searchedColumn === dataIndex ? (
                 replace(text.toString(), new RegExp(searchText, 'gi'), (match, i) => (
-                    <span key={i} style={{ backgroundColor: "#ffc069", padding: 0 }}>
+                    <span key={`${record._id}-${text}-${i}`} style={{ backgroundColor: "#ffc069", padding: 0 }}>
                         {match}
                     </span>
                 ))
@@ -126,7 +126,7 @@ const BillPage = () => {
     useEffect(() => {
         const getBills = async () => {
             try {
-                const res = await fetch("http://localhost:5000/api/bills/get-all");
+                const res = await fetch("http://localhost:5001/api/bills/get-all");
                 const data = await res.json();
                 setBillItems(data);
             } catch (error) {
@@ -154,9 +154,11 @@ const BillPage = () => {
             title: "Oluşturma Tarihi",
             dataIndex: "createdAt",
             key: "createdAt",
-            render: (text) => {
-                return <span className="cursor-pointer transition-all select-none">{text.substring(0, 10)}</span>;
-            },
+            render: (text, record) => (
+                <span key={record._id + "-date"} className="cursor-pointer transition-all select-none">
+                    {text.substring(0, 10)}
+                </span>
+            ),
         },
         {
             title: "Ödeme Yöntemi",
@@ -168,31 +170,33 @@ const BillPage = () => {
             title: "Toplam Fiyat",
             dataIndex: "totalAmount",
             key: "totalAmount",
-            render: (text) => {
-                return <span className="cursor-pointer transition-all select-none">{text}₺</span>;
-            },
+            render: (text, record) => (
+                <span key={record._id + "-total"} className="cursor-pointer transition-all select-none">
+                    {text}₺
+                </span>
+            ),
             sorter: (a, b) => a.totalAmount - b.totalAmount,
         },
         {
             title: "Actions",
             dataIndex: "action",
             key: "action",
-            render: (_, record) => {
-                return (
-                    <Button
-                        type="link"
-                        className="pl-0 cursor-pointer transition-all select-none"
-                        onClick={() => {
-                            setIsModalOpen(true);
-                            setCustomer(record);
-                        }}
-                    >
-                        Yazdır
-                    </Button>
-                );
-            },
+            render: (_, record) => (
+                <Button
+                    key={record._id + "-action"}
+                    type="link"
+                    className="pl-0 cursor-pointer transition-all select-none"
+                    onClick={() => {
+                        setIsModalOpen(true);
+                        setCustomer(record);
+                    }}
+                >
+                    Yazdır
+                </Button>
+            ),
         },
     ];
+
 
     return (
         <>

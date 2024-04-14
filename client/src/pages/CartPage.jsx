@@ -113,16 +113,17 @@ const CartPage = () => {
                 setTimeout(() => searchInput.current?.select(), 100);
             }
         },
-        render: (text) =>
-            searchedColumn === dataIndex ? (
+        render: (text, record, index) => {
+            return searchedColumn === dataIndex ? (
                 replace(text.toString(), new RegExp(searchText, 'gi'), (match, i) => (
-                    <span key={i} style={{ backgroundColor: "#ffc069", padding: 0 }}>
+                    <span key={`${record.id}-${dataIndex}-${i}`} style={{ backgroundColor: "#ffc069", padding: 0 }}>
                         {match}
                     </span>
                 ))
             ) : (
                 text
-            ),
+            );
+        }
     });
 
 
@@ -214,7 +215,7 @@ const CartPage = () => {
                         okText="Evet"
                         cancelText="Hayır"
                     >
-                        <Button type="link" danger>
+                        <Button type="link" danger key={`delete-${record.id}`}>
                             Sil
                         </Button>
                     </Popconfirm>
@@ -236,6 +237,7 @@ const CartPage = () => {
                         x: 1200,
                         y: 300,
                     }}
+                    rowKey="_id"
                 />
                 <div className="cart-total flex justify-end mt-4">
                     <Card className="w-72">
