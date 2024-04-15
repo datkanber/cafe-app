@@ -7,6 +7,7 @@ import replace from 'react-string-replace';
 
 const BillPage = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
+    const [isLoading, setIsLoading] = useState(false);
     const [billItems, setBillItems] = useState([]);
     const [customer, setCustomer] = useState();
     const [searchText, setSearchText] = useState("");
@@ -125,12 +126,15 @@ const BillPage = () => {
 
     useEffect(() => {
         const getBills = async () => {
+            setIsLoading(true); // Set loading to true before fetching
             try {
-                const res = await fetch("http://localhost:5001/api/bills/get-all");
+                const res = await fetch(process.env.REACT_APP_SERVER_URL +  "/api/bills/get-all");
                 const data = await res.json();
                 setBillItems(data);
+                setIsLoading(false); // Set loading to false after fetching
             } catch (error) {
                 console.log(error);
+                setIsLoading(false); // Ensure loading is set to false on error
             }
         };
 
@@ -202,7 +206,12 @@ const BillPage = () => {
         <>
             <Header />
             <h1 className="text-4xl font-bold text-center mb-4 cursor-pointer transition-all select-none">Faturalar</h1>
-            {billItems ? (
+            {isLoading ? (
+                <Spin
+                    size="large"
+                    className="absolute top-1/2 h-screen w-screen flex justify-center cursor-pointer transition-all select-none"
+                />
+            ) : (
                 <div className="px-6">
                     <Table
                         dataSource={billItems}
@@ -216,11 +225,6 @@ const BillPage = () => {
                         rowKey="_id"
                     />
                 </div>
-            ) : (
-                <Spin
-                    size="large"
-                    className="absolute top-1/2 h-screen w-screen flex justify-center cursor-pointer transition-all select-none"
-                />
             )}
             <PrintBill
                 isModalOpen={isModalOpen}
@@ -230,5 +234,4 @@ const BillPage = () => {
         </>
     );
 };
-
 export default BillPage;

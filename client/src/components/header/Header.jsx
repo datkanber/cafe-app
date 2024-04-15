@@ -49,53 +49,49 @@ const Header = ({ setSearch }) => {
                 <div className="menu-links flex justify-between items-center gap-9 md:static 
                 fixed z-50 bottom-0 md:w-auto w-screen md:bg-transparent bg-white left-0 
                 md:border-t-0 border-t md:px-0 px-4 py-1">
-                    <Link
-                        to={"/"} className='menu-link flex flex-col hover:text-[#40a9ff] trasition-all'>
+                    <Link to="/" className={`menu-link ${pathname === "/" ? "active" : ""}`}>
                         <HomeOutlined className='md:text-2xl text-xl block' />
                         <span className='md:text-xs text-[10x] text-center'>
                             Ana Sayfa
                         </span>
                     </Link>
                     <Badge count={cart.cartItems.length} offset={[0, 0]} className='md:flex hidden'>
-                        <Link
-                            to={"/cart"}
-                            className='menu-link flex flex-col hover:text-[#40a9ff] trasition-all'
-                        >
+                        <Link to="/cart" className={`menu-link ${pathname === "/cart" ? "active" : ""}`}>
                             <ShoppingCartOutlined className='md:text-2xl text-xl block' />
                             <span className='md:text-xs text-[10x] text-center'>
                                 Sepet
                             </span>
                         </Link>
                     </Badge>
-                    <Link to={"/bills"} className='menu-link flex flex-col hover:text-[#40a9ff] trasition-all'>
+                    <Link to="/bills" className={`menu-link ${pathname === "/bills" ? "active" : ""}`}>
                         <CopyOutlined className='md:text-2xl text-xl block' />
                         <span className='md:text-xs text-[10x] text-center'>
                             Faturalar
                         </span>
                     </Link>
-                    <Link to={"/customers"} className='menu-link flex flex-col hover:text-[#40a9ff] trasition-all'>
+                    <Link to="/customers" className={`menu-link ${pathname === "/customers" ? "active" : ""}`}>
                         <UserOutlined className='md:text-2xl text-xl block' />
                         <span className='md:text-xs text-[10x] text-center'>
                             Müşteriler
                         </span>
                     </Link>
-                    <Link to={"/statistic"} className='menu-link flex flex-col hover:text-[#40a9ff] trasition-all'>
+                    <Link to="/statistic" className={`menu-link ${pathname === "/statistic" ? "active" : ""}`}>
                         <PieChartOutlined className='md:text-2xl text-xl block' />
                         <span className='md:text-xs text-[10x] text-center'>
                             İstatistikler
                         </span>
                     </Link>
                     <div onClick={logOut}>
-                        <Link to={"/"} className='menu-link flex flex-col hover:text-[#40a9ff] trasition-all'>
+                        <Link to="/" className={`menu-link2 ${pathname === "/" ? "active" : ""}`}>
                             <LogoutOutlined className='md:text-2xl text-xl block' />
-                            <span className='md:text-xs text-[10x] text-center'>
+                            <span className='md:text-xs text-[10px] text-center'>
                                 Çıkış
                             </span>
                         </Link>
                     </div>
                 </div>
-                <Badge count={5} offset={[0, 0]} className='md:hidden flex'>
-                    <Link to={"/"} className='menu-link flex flex-col hover:text-[#40a9ff] trasition-all'>
+                <Badge count={cart.cartItems.length} offset={[0, 0]} className='md:hidden flex'>
+                    <Link to="/cart" className={`menu-link ${pathname === "/cart" ? "active" : ""}`}>
                         <ShoppingCartOutlined className='text-xl block' />
                         <span className='md:text-xs text-[10x] text-center'>
                             Sepet

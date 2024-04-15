@@ -107,30 +107,38 @@ const CreateBill = ({ isModalOpen, setIsModalOpen }) => {
                     </Select>
                 </Form.Item>
                 <Card>
-                    <div
-                        className="flex justify-between">
+                    <div className="flex justify-between">
                         <span>Ara Toplam</span>
-                        <span>549.00tl</span>
+                        <span>{cart.total > 0 ? cart.total.toFixed(2) : 0}₺</span>
                     </div>
-                    <div
-                        className="flex justify-between my-2">
-                        <span>KDV Toplam %8</span>
-                        <span className="text-red-600">+43.93tl</span>
+                    <div className="flex justify-between my-2">
+                        <span>KDV %{cart.tax}</span>
+                        <span className="text-red-600">
+                            {(cart.total * cart.tax) / 100 > 0
+                                ? `+${((cart.total * cart.tax) / 100).toFixed(2)}`
+                                : 0}
+                            ₺
+                        </span>
                     </div>
-                    <div
-                        className="flex justify-between">
-                        <b>Toplam</b>
-                        <b>549.00tl</b>
+                    <div className="flex justify-between">
+                        <b>Genel Toplam</b>
+                        <b>
+                            {cart.total + (cart.total * cart.tax) / 100 > 0
+                                ? (cart.total + (cart.total * cart.tax) / 100).toFixed(2)
+                                : 0}
+                            ₺
+                        </b>
                     </div>
                     <div className="flex justify-end">
                         <Button
-                            className="mt-4 w-full custom-button"
+                            className="mt-4"
                             type="primary"
-                            size="large"
                             onClick={() => setIsModalOpen(true)}
                             htmlType="submit"
                             disabled={cart.cartItems.length === 0}
-                        >Sipariş Oluştur</Button>
+                        >
+                            Sipariş Oluştur
+                        </Button>
                     </div>
                 </Card>
             </Form>
