@@ -19,7 +19,7 @@ const PrintBill = ({ isModalOpen, setIsModalOpen, customer }) => {
                 <div className="max-w-5xl mx-auto bg-white px-6">
                     <article className="overflow-hidden">
                         <div className="logo my-6">
-                            <h2 className="text-4xl font-bold text-slate-700">LOGO</h2>
+                            <img src="https://www.pcis.com.tr/data/_images/logo2.png" alt="logo" />
                         </div>
                         <div className="bill-details">
                             <div className="grid sm:grid-cols-4 grid-cols-3 gap-12">
