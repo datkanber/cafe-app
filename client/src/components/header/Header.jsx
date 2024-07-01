@@ -29,7 +29,7 @@ const Header = ({ setSearch }) => {
             <header className='py-3 px-6 flex justify-between items-center gap-10'>
                 <div className="logo flex justify-center items-center">
                     <img
-                        src="https://i.ibb.co/0MKD520/Screenshot-2024-07-01-at-20-20-45.png"
+                        src="https://www.freepnglogos.com/uploads/coffee-logo-png/coffee-logo-symbol-19.png"
                         alt="logo"
                         className="rounded-full"
                         style={{ width: '50px', height: '50px' }} // Adjust the size as needed
