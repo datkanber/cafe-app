@@ -29,8 +29,12 @@ const Header = ({ setSearch }) => {
     return (
         <div className='border-b mb-6 shadow-lg cursor-pointer transition-all select-none'>
             <header className='py-3 px-6 flex justify-between items-center gap-10'>
-                <div className="logo">
-                    <img src="https://www.https://www.burakkanber.dev.com.tr/data/_images/logo2.png" alt="logo" />
+                <div className="logo flex justify-center pb-11">
+                    <img
+                        src="https://i.ibb.co/0MKD520/Screenshot-2024-07-01-at-20-20-45.png"
+                        alt="logo"
+                        className="rounded-full"
+                    />
                 </div>
                 <div className="header-search flex-1 flex justify-center" onClick={() => {
                     pathname !== "/" && navigate("/")

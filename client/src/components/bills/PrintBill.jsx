@@ -18,8 +18,12 @@ const PrintBill = ({ isModalOpen, setIsModalOpen, customer }) => {
             <section className="py-20 bg-black" ref={componentRef}>
                 <div className="max-w-5xl mx-auto bg-white px-6">
                     <article className="overflow-hidden">
-                        <div className="logo my-6">
-                            <img src="https://www.https://www.burakkanber.dev.com.tr/data/_images/logo2.png" alt="logo" />
+                        <div className="logo flex justify-center pb-11">
+                            <img
+                                src="https://i.ibb.co/0MKD520/Screenshot-2024-07-01-at-20-20-45.png"
+                                alt="logo"
+                                className="rounded-full"
+                            />
                         </div>
                         <div className="bill-details">
                             <div className="grid sm:grid-cols-4 grid-cols-3 gap-12">

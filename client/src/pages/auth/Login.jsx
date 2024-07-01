@@ -10,7 +10,7 @@ const Login = () => {
     const onFinish = async (values) => {
         setLoading(true);
         try {
-            const res = await fetch(process.env.REACT_APP_SERVER_URL +  "/api/auth/login", {
+            const res = await fetch(process.env.REACT_APP_SERVER_URL + "/api/auth/login", {
                 method: "POST",
                 body: JSON.stringify(values),
                 headers: { "Content-type": "application/json; charset=UTF-8" },
@@ -46,8 +46,12 @@ const Login = () => {
         select-none'>
             <div className='flex justify-between h-full font-bold'>
                 <div className='xl:px-20 px-10 flex flex-col h-full w-full justify-center relative'>
-                    <div className="logo  flex justify-center pb-11">
-                        <img src="https://www.https://www.burakkanber.dev.com.tr/data/_images/logo2.png" alt="logo" />
+                    <div className="logo flex justify-center pb-11">
+                        <img
+                            src="https://i.ibb.co/0MKD520/Screenshot-2024-07-01-at-20-20-45.png"
+                            alt="logo"
+                            className="rounded-full"
+                        />
                     </div>
                     <Form
                         layout="vertical"
