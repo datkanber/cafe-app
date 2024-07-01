@@ -30,7 +30,7 @@ const Header = ({ setSearch }) => {
         <div className='border-b mb-6 shadow-lg cursor-pointer transition-all select-none'>
             <header className='py-3 px-6 flex justify-between items-center gap-10'>
                 <div className="logo">
-                    <img src="https://www.pcis.com.tr/data/_images/logo2.png" alt="logo" />
+                    <img src="https://www.https://www.burakkanber.dev.com.tr/data/_images/logo2.png" alt="logo" />
                 </div>
                 <div className="header-search flex-1 flex justify-center" onClick={() => {
                     pathname !== "/" && navigate("/")

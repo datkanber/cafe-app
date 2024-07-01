@@ -47,7 +47,7 @@ const Login = () => {
             <div className='flex justify-between h-full font-bold'>
                 <div className='xl:px-20 px-10 flex flex-col h-full w-full justify-center relative'>
                     <div className="logo  flex justify-center pb-11">
-                        <img src="https://www.pcis.com.tr/data/_images/logo2.png" alt="logo" />
+                        <img src="https://www.https://www.burakkanber.dev.com.tr/data/_images/logo2.png" alt="logo" />
                     </div>
                     <Form
                         layout="vertical"
