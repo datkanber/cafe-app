@@ -12,8 +12,6 @@ import * as React from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import { useSelector } from "react-redux";
 
-
-
 const Header = ({ setSearch }) => {
     const cart = useSelector((state) => state.cart);
     const { pathname } = useLocation();
@@ -29,11 +27,12 @@ const Header = ({ setSearch }) => {
     return (
         <div className='border-b mb-6 shadow-lg cursor-pointer transition-all select-none'>
             <header className='py-3 px-6 flex justify-between items-center gap-10'>
-                <div className="logo flex justify-center pb-11">
+                <div className="logo flex justify-center items-center">
                     <img
                         src="https://i.ibb.co/0MKD520/Screenshot-2024-07-01-at-20-20-45.png"
                         alt="logo"
                         className="rounded-full"
+                        style={{ width: '50px', height: '50px' }} // Adjust the size as needed
                     />
                 </div>
                 <div className="header-search flex-1 flex justify-center" onClick={() => {
@@ -55,33 +54,33 @@ const Header = ({ setSearch }) => {
                 md:border-t-0 border-t md:px-0 px-4 py-1">
                     <Link to="/" className={`menu-link ${pathname === "/" ? "active" : ""}`}>
                         <HomeOutlined className='md:text-2xl text-xl block' />
-                        <span className='md:text-xs text-[10x] text-center'>
+                        <span className='md:text-xs text-[10px] text-center'>
                             Ana Sayfa
                         </span>
                     </Link>
                     <Badge count={cart.cartItems.length} offset={[0, 0]} className='md:flex hidden'>
                         <Link to="/cart" className={`menu-link ${pathname === "/cart" ? "active" : ""}`}>
                             <ShoppingCartOutlined className='md:text-2xl text-xl block' />
-                            <span className='md:text-xs text-[10x] text-center'>
+                            <span className='md:text-xs text-[10px] text-center'>
                                 Sepet
                             </span>
                         </Link>
                     </Badge>
                     <Link to="/bills" className={`menu-link ${pathname === "/bills" ? "active" : ""}`}>
                         <CopyOutlined className='md:text-2xl text-xl block' />
-                        <span className='md:text-xs text-[10x] text-center'>
+                        <span className='md:text-xs text-[10px] text-center'>
                             Faturalar
                         </span>
                     </Link>
                     <Link to="/customers" className={`menu-link ${pathname === "/customers" ? "active" : ""}`}>
                         <UserOutlined className='md:text-2xl text-xl block' />
-                        <span className='md:text-xs text-[10x] text-center'>
+                        <span className='md:text-xs text-[10px] text-center'>
                             Müşteriler
                         </span>
                     </Link>
                     <Link to="/statistic" className={`menu-link ${pathname === "/statistic" ? "active" : ""}`}>
                         <PieChartOutlined className='md:text-2xl text-xl block' />
-                        <span className='md:text-xs text-[10x] text-center'>
+                        <span className='md:text-xs text-[10px] text-center'>
                             İstatistikler
                         </span>
                     </Link>
@@ -97,7 +96,7 @@ const Header = ({ setSearch }) => {
                 <Badge count={cart.cartItems.length} offset={[0, 0]} className='md:hidden flex'>
                     <Link to="/cart" className={`menu-link ${pathname === "/cart" ? "active" : ""}`}>
                         <ShoppingCartOutlined className='text-xl block' />
-                        <span className='md:text-xs text-[10x] text-center'>
+                        <span className='md:text-xs text-[10px] text-center'>
                             Sepet
                         </span>
                     </Link>
